@@ -77,6 +77,13 @@ https://github.com/z3t0/Arduino-IRremote
 
 ### MDAC attenuator
 
+To calculate gain use this formula:
+
+      gain = (R2+R3)/R2
+      R1 = (R2*R3)/(R2+R3)
+
+This was copied from the [AD5429/AD5439/AD5449 datasheet](http://www.analog.com/media/en/technical-documentation/data-sheets/AD5429_5439_5449.pdf)
+
 | Part name    | Farnell Part | Detail                     | Description                                      | Notes            | Quantity |
 |--------------|--------------|----------------------------|--------------------------------------------------|------------------|----------|
 | U2           | 1390687      | TI DAC8812ICPWG4           |                                                  |                  | 1        |
