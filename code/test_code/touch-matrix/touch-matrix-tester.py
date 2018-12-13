@@ -42,33 +42,26 @@ def set_all_neopixels(rgbw):
         np[pixel] = rgbw
         np.write()
 
+pixel_numbers = [
+    [24, 23, 22, 21, 20],
+    [15, 16, 17, 18, 19],
+    [14, 13, 12, 11, 10],
+    [5, 6, 7, 8, 9],
+    [4, 3, 2, 1, 0]
+]
 
-def set_neopixels(light_levels):
-    def _get_pixel_number(row, column):
-        if row == 1:
-            pixel = 20 + 5 - column
-        elif row == 2:
-            pixel = 15 + column
-        elif row == 3:
-            pixel = 10 + 5 - column
-        elif row == 4:
-            pixel = 5 + column
-        elif row == 5:
-            pixel = column
-        else:
-            print('error')
-        return pixel - 1
-    for row in light_levels.keys():
-        # Takes 2-4ms per row column
-        for column in light_levels[row]:
-            pixel = _get_pixel_number(int(row), int(column))
-            level = 255 - (light_levels[row][column] * 8)
+def set_neopixels(rows):
+    for row in range(0, 5):
+        for column in range(0, 5):
+            level = 255 - (rows[row][column] * 8)
             if level >= 256:
                 level = 255
             elif level < 0:
                 level = 0
-            np[pixel] = (0, 0, level, 14)
+            pixel = pixel_numbers[row][column]
+            np[pixel] = (0, 0, level, 10)
     np.write()
+
 
 def calculate_MCP23S08_value(row, column):
     '''
@@ -102,14 +95,16 @@ setMCP23S08(0, 0)
 
 set_all_neopixels((4, 0, 0, 0))
 
-while True:
-    light_levels = {}
-    for row in range(1, 6):
-        light_levels[str(row)] = {}
-        for column in range(1, 6):
-            # This takes 5-7ms
-            setMCP23S08(9, calculate_MCP23S08_value(row=row, column=column))
-            light_level = light.read()
-            light_levels[str(row)][str(column)] = light_level
-    # This takes 45-50ms
-    set_neopixels(light_levels)
+def run():
+    while True:
+        rows = []
+        for row in range(1, 6):
+            columns = []
+            for column in range(1, 6):
+                # This takes 5-7ms
+                setMCP23S08(9, calculate_MCP23S08_value(row=row, column=column))
+                light_level = light.read()
+                columns.append(light_level)
+            rows.append(columns)
+        # This takes 45-50ms
+        set_neopixels(rows)
