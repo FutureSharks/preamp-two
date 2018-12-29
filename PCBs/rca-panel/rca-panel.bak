@@ -1,0 +1,467 @@
+EESchema Schematic File Version 4
+LIBS:rca-panel-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Conn_Coaxial RCA_1_R1
+U 1 1 5C27ACC8
+P 1250 4900
+F 0 "RCA_1_R1" H 1349 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 1349 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 1250 4900 50  0001 C CNN
+F 3 " ~" H 1250 4900 50  0001 C CNN
+	1    1250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_1_L1
+U 1 1 5C27ACCF
+P 1250 5300
+F 0 "RCA_1_L1" H 1349 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 1349 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 1250 5300 50  0001 C CNN
+F 3 " ~" H 1250 5300 50  0001 C CNN
+	1    1250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_2_R1
+U 1 1 5C27ACD6
+P 2050 4900
+F 0 "RCA_2_R1" H 2149 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2149 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 2050 4900 50  0001 C CNN
+F 3 " ~" H 2050 4900 50  0001 C CNN
+	1    2050 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_2_L1
+U 1 1 5C27ACDD
+P 2050 5300
+F 0 "RCA_2_L1" H 2149 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2149 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 2050 5300 50  0001 C CNN
+F 3 " ~" H 2050 5300 50  0001 C CNN
+	1    2050 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_3_R1
+U 1 1 5C27ACE4
+P 2850 4900
+F 0 "RCA_3_R1" H 2949 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2949 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 2850 4900 50  0001 C CNN
+F 3 " ~" H 2850 4900 50  0001 C CNN
+	1    2850 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_3_L1
+U 1 1 5C27ACEB
+P 2850 5300
+F 0 "RCA_3_L1" H 2949 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 2949 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 2850 5300 50  0001 C CNN
+F 3 " ~" H 2850 5300 50  0001 C CNN
+	1    2850 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_4_R1
+U 1 1 5C27ACF2
+P 3650 4900
+F 0 "RCA_4_R1" H 3749 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 3749 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 3650 4900 50  0001 C CNN
+F 3 " ~" H 3650 4900 50  0001 C CNN
+	1    3650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_4_L1
+U 1 1 5C27ACF9
+P 3650 5300
+F 0 "RCA_4_L1" H 3749 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 3749 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 3650 5300 50  0001 C CNN
+F 3 " ~" H 3650 5300 50  0001 C CNN
+	1    3650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_5_R1
+U 1 1 5C27AD00
+P 4450 4900
+F 0 "RCA_5_R1" H 4549 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4549 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 4450 4900 50  0001 C CNN
+F 3 " ~" H 4450 4900 50  0001 C CNN
+	1    4450 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_5_L1
+U 1 1 5C27AD07
+P 4450 5300
+F 0 "RCA_5_L1" H 4549 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 4549 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 4450 5300 50  0001 C CNN
+F 3 " ~" H 4450 5300 50  0001 C CNN
+	1    4450 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_6_R1
+U 1 1 5C27AD0E
+P 5250 4900
+F 0 "RCA_6_R1" H 5349 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5349 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 5250 4900 50  0001 C CNN
+F 3 " ~" H 5250 4900 50  0001 C CNN
+	1    5250 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial RCA_6_L1
+U 1 1 5C27AD15
+P 5250 5300
+F 0 "RCA_6_L1" H 5349 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5349 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 5250 5300 50  0001 C CNN
+F 3 " ~" H 5250 5300 50  0001 C CNN
+	1    5250 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial OUT_R1
+U 1 1 5C27AD1C
+P 6650 4900
+F 0 "OUT_R1" H 6749 4876 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6749 4785 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 6650 4900 50  0001 C CNN
+F 3 " ~" H 6650 4900 50  0001 C CNN
+	1    6650 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial OUT_L1
+U 1 1 5C27AD23
+P 6650 5300
+F 0 "OUT_L1" H 6749 5276 50  0000 L CNN
+F 1 "Conn_Coaxial" H 6749 5185 50  0000 L CNN
+F 2 "rca-panel:cmc-805" H 6650 5300 50  0001 C CNN
+F 3 " ~" H 6650 5300 50  0001 C CNN
+	1    6650 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN1
+U 1 1 5C27AD2A
+P 1250 6200
+F 0 "IN1" V 1123 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 1214 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1250 6200 50  0001 C CNN
+F 3 "~" H 1250 6200 50  0001 C CNN
+	1    1250 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN2
+U 1 1 5C27AD31
+P 2050 6200
+F 0 "IN2" V 1923 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 2014 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2050 6200 50  0001 C CNN
+F 3 "~" H 2050 6200 50  0001 C CNN
+	1    2050 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN3
+U 1 1 5C27AD38
+P 2850 6200
+F 0 "IN3" V 2723 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 2814 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2850 6200 50  0001 C CNN
+F 3 "~" H 2850 6200 50  0001 C CNN
+	1    2850 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN4
+U 1 1 5C27AD3F
+P 3650 6200
+F 0 "IN4" V 3523 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 3614 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3650 6200 50  0001 C CNN
+F 3 "~" H 3650 6200 50  0001 C CNN
+	1    3650 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN5
+U 1 1 5C27AD46
+P 4450 6200
+F 0 "IN5" V 4323 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 4414 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4450 6200 50  0001 C CNN
+F 3 "~" H 4450 6200 50  0001 C CNN
+	1    4450 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 IN6
+U 1 1 5C27AD4D
+P 5250 6200
+F 0 "IN6" V 5123 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 5214 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5250 6200 50  0001 C CNN
+F 3 "~" H 5250 6200 50  0001 C CNN
+	1    5250 6200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 OUT1
+U 1 1 5C27AD54
+P 6650 6200
+F 0 "OUT1" V 6523 6380 50  0000 L CNN
+F 1 "Conn_01x03" V 6614 6380 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6650 6200 50  0001 C CNN
+F 3 "~" H 6650 6200 50  0001 C CNN
+	1    6650 6200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1050 4900 900  4900
+Wire Wire Line
+	900  4900 900  5750
+Wire Wire Line
+	900  5750 1150 5750
+Wire Wire Line
+	1150 5750 1150 6000
+Wire Wire Line
+	1050 5300 1000 5300
+Wire Wire Line
+	1000 5300 1000 5650
+Wire Wire Line
+	1350 5650 1350 6000
+Wire Wire Line
+	1000 5650 1350 5650
+Wire Wire Line
+	1250 5100 1500 5100
+Wire Wire Line
+	1850 4900 1700 4900
+Wire Wire Line
+	1700 4900 1700 5700
+Wire Wire Line
+	1700 5700 1950 5700
+Wire Wire Line
+	1950 5700 1950 6000
+Wire Wire Line
+	2150 6000 2150 5600
+Wire Wire Line
+	2150 5600 1800 5600
+Wire Wire Line
+	1800 5600 1800 5300
+Wire Wire Line
+	1800 5300 1850 5300
+Wire Wire Line
+	2650 4900 2500 4900
+Wire Wire Line
+	2500 4900 2500 5700
+Wire Wire Line
+	2500 5700 2750 5700
+Wire Wire Line
+	2750 5700 2750 6000
+Wire Wire Line
+	2600 5600 2600 5300
+Wire Wire Line
+	2600 5300 2650 5300
+Wire Wire Line
+	3450 4900 3300 4900
+Wire Wire Line
+	3300 4900 3300 5700
+Wire Wire Line
+	3300 5700 3550 5700
+Wire Wire Line
+	3550 5700 3550 6000
+Wire Wire Line
+	3400 5600 3400 5300
+Wire Wire Line
+	3400 5300 3450 5300
+Wire Wire Line
+	4250 4900 4100 4900
+Wire Wire Line
+	4100 4900 4100 5700
+Wire Wire Line
+	4100 5700 4350 5700
+Wire Wire Line
+	4350 5700 4350 6000
+Wire Wire Line
+	4250 5300 4200 5300
+Wire Wire Line
+	4200 5300 4200 5600
+Wire Wire Line
+	4200 5600 4550 5600
+Wire Wire Line
+	4550 5600 4550 6000
+Wire Wire Line
+	2950 5600 2950 6000
+Wire Wire Line
+	2600 5600 2950 5600
+Wire Wire Line
+	3750 5600 3750 6000
+Wire Wire Line
+	3400 5600 3750 5600
+Wire Wire Line
+	5050 4900 4900 4900
+Wire Wire Line
+	4900 4900 4900 5700
+Wire Wire Line
+	4900 5700 5150 5700
+Wire Wire Line
+	5150 5700 5150 6000
+Wire Wire Line
+	5350 6000 5350 5600
+Wire Wire Line
+	5350 5600 5000 5600
+Wire Wire Line
+	5000 5600 5000 5300
+Wire Wire Line
+	5000 5300 5050 5300
+Wire Wire Line
+	2050 5500 2300 5500
+Wire Wire Line
+	2300 5500 2300 5100
+Wire Wire Line
+	2850 5500 3100 5500
+Wire Wire Line
+	3100 5500 3100 5100
+Wire Wire Line
+	3650 5500 3900 5500
+Wire Wire Line
+	3900 5500 3900 5100
+Wire Wire Line
+	4450 5500 4700 5500
+Wire Wire Line
+	4700 5500 4700 5100
+Wire Wire Line
+	5250 5500 5500 5500
+Wire Wire Line
+	5500 5500 5500 5100
+Wire Wire Line
+	1500 5100 1500 5500
+Wire Wire Line
+	1500 5500 1250 5500
+Wire Wire Line
+	2050 5100 2300 5100
+Wire Wire Line
+	2850 5100 3100 5100
+Wire Wire Line
+	3650 5100 3900 5100
+Wire Wire Line
+	4450 5100 4700 5100
+Wire Wire Line
+	5250 5100 5500 5100
+Wire Wire Line
+	6450 4900 6300 4900
+Wire Wire Line
+	6300 4900 6300 5700
+Wire Wire Line
+	6300 5700 6550 5700
+Wire Wire Line
+	6550 5700 6550 6000
+Wire Wire Line
+	6450 5300 6400 5300
+Wire Wire Line
+	6400 5300 6400 5600
+Wire Wire Line
+	6400 5600 6750 5600
+Wire Wire Line
+	6750 5600 6750 6000
+Wire Wire Line
+	6650 5100 6900 5100
+Wire Wire Line
+	6650 5500 6900 5500
+Wire Wire Line
+	6900 5500 6900 5100
+$Comp
+L Mechanical:MountingHole MH1
+U 1 1 5C27ADA8
+P 3300 7100
+F 0 "MH1" H 3400 7146 50  0000 L CNN
+F 1 "MountingHole" H 3400 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3300 7100 50  0001 C CNN
+F 3 "~" H 3300 7100 50  0001 C CNN
+	1    3300 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH2
+U 1 1 5C27ADAF
+P 4150 7100
+F 0 "MH2" H 4250 7146 50  0000 L CNN
+F 1 "MountingHole" H 4250 7055 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 4150 7100 50  0001 C CNN
+F 3 "~" H 4150 7100 50  0001 C CNN
+	1    4150 7100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH3
+U 1 1 5C27ADB6
+P 3300 7350
+F 0 "MH3" H 3400 7396 50  0000 L CNN
+F 1 "MountingHole" H 3400 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 3300 7350 50  0001 C CNN
+F 3 "~" H 3300 7350 50  0001 C CNN
+	1    3300 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole MH4
+U 1 1 5C27ADBD
+P 4150 7350
+F 0 "MH4" H 4250 7396 50  0000 L CNN
+F 1 "MountingHole" H 4250 7305 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 4150 7350 50  0001 C CNN
+F 3 "~" H 4150 7350 50  0001 C CNN
+	1    4150 7350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1250 6000 1250 5500
+Connection ~ 1250 5500
+Wire Wire Line
+	2050 6000 2050 5500
+Connection ~ 2050 5500
+Wire Wire Line
+	2850 6000 2850 5500
+Connection ~ 2850 5500
+Wire Wire Line
+	3650 6000 3650 5500
+Connection ~ 3650 5500
+Wire Wire Line
+	4450 6000 4450 5500
+Connection ~ 4450 5500
+Wire Wire Line
+	5250 6000 5250 5500
+Connection ~ 5250 5500
+Wire Wire Line
+	6650 6000 6650 5500
+Connection ~ 6650 5500
+$EndSCHEMATC
