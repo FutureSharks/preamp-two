@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name Bournes-EN-encoder)(type Legacy)(uri /Users/max/Projects/encoder-panel/bournes-en-encoder.lib)(options "")(descr ""))
-  (lib (name encoder-panel-cache)(type Legacy)(uri /Users/max/Projects/encoder-panel/encoder-panel-cache.lib)(options "")(descr ""))
+  (lib (name Bournes-EN-encoder)(type Legacy)(uri /Users/max/git/preamp-two/PCBs/encoder-panel/bournes-en-encoder.lib)(options "")(descr ""))
+  (lib (name encoder-panel-cache)(type Legacy)(uri /Users/max/git/preamp-two/PCBs/encoder-panel/encoder-panel-cache.lib)(options "")(descr ""))
 )
