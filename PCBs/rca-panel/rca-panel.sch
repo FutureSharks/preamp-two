@@ -23,7 +23,7 @@ F 1 "Conn_Coaxial" H 2849 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 2750 2500 50  0001 C CNN
 F 3 " ~" H 2750 2500 50  0001 C CNN
 	1    2750 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_1_R1
@@ -34,7 +34,7 @@ F 1 "Conn_Coaxial" H 2849 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 2750 2900 50  0001 C CNN
 F 3 " ~" H 2750 2900 50  0001 C CNN
 	1    2750 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_2_L1
@@ -45,7 +45,7 @@ F 1 "Conn_Coaxial" H 3649 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 3550 2500 50  0001 C CNN
 F 3 " ~" H 3550 2500 50  0001 C CNN
 	1    3550 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_2_R1
@@ -56,7 +56,7 @@ F 1 "Conn_Coaxial" H 3649 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 3550 2900 50  0001 C CNN
 F 3 " ~" H 3550 2900 50  0001 C CNN
 	1    3550 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_3_L1
@@ -67,7 +67,7 @@ F 1 "Conn_Coaxial" H 4449 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 4350 2500 50  0001 C CNN
 F 3 " ~" H 4350 2500 50  0001 C CNN
 	1    4350 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_3_R1
@@ -78,7 +78,7 @@ F 1 "Conn_Coaxial" H 4449 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 4350 2900 50  0001 C CNN
 F 3 " ~" H 4350 2900 50  0001 C CNN
 	1    4350 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_4_L1
@@ -89,7 +89,7 @@ F 1 "Conn_Coaxial" H 5249 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 5150 2500 50  0001 C CNN
 F 3 " ~" H 5150 2500 50  0001 C CNN
 	1    5150 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_4_R1
@@ -100,7 +100,7 @@ F 1 "Conn_Coaxial" H 5249 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 5150 2900 50  0001 C CNN
 F 3 " ~" H 5150 2900 50  0001 C CNN
 	1    5150 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_5_L1
@@ -111,7 +111,7 @@ F 1 "Conn_Coaxial" H 6049 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 5950 2500 50  0001 C CNN
 F 3 " ~" H 5950 2500 50  0001 C CNN
 	1    5950 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_5_R1
@@ -122,7 +122,7 @@ F 1 "Conn_Coaxial" H 6049 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 5950 2900 50  0001 C CNN
 F 3 " ~" H 5950 2900 50  0001 C CNN
 	1    5950 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_6_L1
@@ -133,7 +133,7 @@ F 1 "Conn_Coaxial" H 6849 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 6750 2500 50  0001 C CNN
 F 3 " ~" H 6750 2500 50  0001 C CNN
 	1    6750 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial RCA_6_R1
@@ -144,7 +144,7 @@ F 1 "Conn_Coaxial" H 6849 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 6750 2900 50  0001 C CNN
 F 3 " ~" H 6750 2900 50  0001 C CNN
 	1    6750 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial OUT_L1
@@ -155,7 +155,7 @@ F 1 "Conn_Coaxial" H 8249 2385 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 8150 2500 50  0001 C CNN
 F 3 " ~" H 8150 2500 50  0001 C CNN
 	1    8150 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_Coaxial OUT_R1
@@ -166,7 +166,7 @@ F 1 "Conn_Coaxial" H 8249 2785 50  0000 L CNN
 F 2 "rca-panel:cmc-805" H 8150 2900 50  0001 C CNN
 F 3 " ~" H 8150 2900 50  0001 C CNN
 	1    8150 2900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN1
@@ -177,7 +177,7 @@ F 1 "Conn_01x03" V 2714 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2750 3800 50  0001 C CNN
 F 3 "~" H 2750 3800 50  0001 C CNN
 	1    2750 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN2
@@ -188,7 +188,7 @@ F 1 "Conn_01x03" V 3514 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3550 3800 50  0001 C CNN
 F 3 "~" H 3550 3800 50  0001 C CNN
 	1    3550 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN3
@@ -199,7 +199,7 @@ F 1 "Conn_01x03" V 4314 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 4350 3800 50  0001 C CNN
 F 3 "~" H 4350 3800 50  0001 C CNN
 	1    4350 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN4
@@ -210,7 +210,7 @@ F 1 "Conn_01x03" V 5114 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5150 3800 50  0001 C CNN
 F 3 "~" H 5150 3800 50  0001 C CNN
 	1    5150 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN5
@@ -221,7 +221,7 @@ F 1 "Conn_01x03" V 5914 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5950 3800 50  0001 C CNN
 F 3 "~" H 5950 3800 50  0001 C CNN
 	1    5950 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IN6
@@ -232,7 +232,7 @@ F 1 "Conn_01x03" V 6714 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6750 3800 50  0001 C CNN
 F 3 "~" H 6750 3800 50  0001 C CNN
 	1    6750 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 OUT1
@@ -243,7 +243,7 @@ F 1 "Conn_01x03" V 8114 3980 50  0000 L CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8150 3800 50  0001 C CNN
 F 3 "~" H 8150 3800 50  0001 C CNN
 	1    8150 3800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2550 2500 2400 2500
@@ -408,7 +408,7 @@ F 1 "MountingHole" H 4900 4655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 4800 4700 50  0001 C CNN
 F 3 "~" H 4800 4700 50  0001 C CNN
 	1    4800 4700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH6
@@ -419,7 +419,7 @@ F 1 "MountingHole" H 5750 4655 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5650 4700 50  0001 C CNN
 F 3 "~" H 5650 4700 50  0001 C CNN
 	1    5650 4700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH7
@@ -430,7 +430,7 @@ F 1 "MountingHole" H 4900 4905 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 4800 4950 50  0001 C CNN
 F 3 "~" H 4800 4950 50  0001 C CNN
 	1    4800 4950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole MH8
@@ -441,7 +441,7 @@ F 1 "MountingHole" H 5750 4905 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380" H 5650 4950 50  0001 C CNN
 F 3 "~" H 5650 4950 50  0001 C CNN
 	1    5650 4950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	2750 3600 2750 3100
@@ -464,4 +464,26 @@ Connection ~ 6750 3100
 Wire Wire Line
 	8150 3600 8150 3100
 Connection ~ 8150 3100
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5C327FDF
+P 2950 4700
+F 0 "LOGO1" H 2950 4975 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 2950 4475 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 2950 4700 50  0001 C CNN
+F 3 "~" H 2950 4700 50  0001 C CNN
+	1    2950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5C2A8D32
+P 3450 4700
+F 0 "LOGO2" H 3450 4975 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 3450 4475 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 3450 4700 50  0001 C CNN
+F 3 "~" H 3450 4700 50  0001 C CNN
+	1    3450 4700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

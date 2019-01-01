@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name DAC8812)(type Legacy)(uri /Users/max/git/preamp-two/PCBs/mdac-attenuator/DAC8812.lib)(options "")(descr ""))
+)

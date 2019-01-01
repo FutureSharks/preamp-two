@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name w_relay)(type KiCad)(uri ${KIPRJMOD}/w_relay.pretty)(options "")(descr ""))
+)

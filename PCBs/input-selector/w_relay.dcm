@@ -1,0 +1,119 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP HSSR-8200
+D 200V/160ohm small signal solid state relay
+$ENDCMP
+#
+$CMP RELAY_34.51
+D 34.51 Form C relay
+K relay 34.51
+F /home/walter/Documenti/Elettronica/DATA_SHEET/Elettromeccanici/Relais/FINDER_34.51.pdf
+$ENDCMP
+#
+$CMP RELAY_40.31
+D 40.31 Form C relay
+K relay 40.31
+F /home/walter/Documenti/Elettronica/DATA_SHEET/Elettromeccanici/Relais/FINDER_40.x1.pdf
+$ENDCMP
+#
+$CMP RELAY_40.51
+D 40.51 Form C relay
+K relay 40.51
+F /home/walter/Documenti/Elettronica/DATA_SHEET/Elettromeccanici/Relais/FINDER_40.x1.pdf
+$ENDCMP
+#
+$CMP RELAY_40.52
+D 40.52 2 Form C Relay
+K relay 40.52
+F /home/walter/Documenti/Elettronica/DATA_SHEET/Elettromeccanici/Relais/FINDER_40.x1.pdf
+$ENDCMP
+#
+$CMP RELAY_40.61
+D 40.61 16A Form C Relay
+K relay 40.61
+F /home/walter/Documenti/Elettronica/DATA_SHEET/Elettromeccanici/Relais/FINDER_40.x1.pdf
+$ENDCMP
+#
+$CMP RELAY_9001
+D Coto 9001 series relay
+K relay 9001
+$ENDCMP
+#
+$CMP RELAY_9002
+D Coto 9002 series relay
+K relay 9002
+$ENDCMP
+#
+$CMP RELAY_HB
+D HB series relay
+K relay HB
+$ENDCMP
+#
+$CMP RELAY_HJR-3FF_H
+D HJR-3FF Form A relay
+K relay HJR-3FF
+$ENDCMP
+#
+$CMP RELAY_HJR-3FF_Z
+D HJR-3FF Form C relay
+K relay HJR-3FF
+$ENDCMP
+#
+$CMP RELAY_PE
+D Relay, single dev contact, Schrack PE
+$ENDCMP
+#
+$CMP RELAY_RT1
+D RT1 series relay
+K relay RT1
+$ENDCMP
+#
+$CMP RELAY_RT1_SPNO
+D RT1 series relay, SPNO
+K relay RT1
+$ENDCMP
+#
+$CMP RELAY_SJ-1M
+D Relay, 1 Form A contact, Sanyou SJ-x-1xxxM
+$ENDCMP
+#
+$CMP RELAY_SPDT
+D Relay, single dev contact
+$ENDCMP
+#
+$CMP RELAY_SY
+D SY series relay
+K relay SY
+$ENDCMP
+#
+$CMP RELAY_V23042
+D Siemens V23042 series relay
+K relay V23042
+$ENDCMP
+#
+$CMP RELAY_V23042-B2
+D Siemens V23042-B2 series relay
+K relay V23042-B2
+$ENDCMP
+#
+$CMP RELAY_V23101-D0
+D V23101-D0 relay
+K relay V23101-D0
+$ENDCMP
+#
+$CMP RELAY_V23101-D0-B
+D V23101-D0-xB relay
+K relay V23101-D0-xB
+$ENDCMP
+#
+$CMP RELAY_V23101-D1
+D V23101-D1 relay
+K relay V23101-D1
+$ENDCMP
+#
+$CMP RELAY_V23101-D1-B
+D V23101-D1-xB relay
+K relay V23101-D1-B
+$ENDCMP
+#
+#End Doc Library
