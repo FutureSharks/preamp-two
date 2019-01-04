@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+LIBS:mcu-board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x05 J2
+U 1 1 5C266616
+P 6950 1800
+F 0 "J2" V 6916 1512 50  0000 R CNN
+F 1 "ENCODER-PANEL-2" V 6825 1512 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 6950 1800 50  0001 C CNN
+F 3 "~" H 6950 1800 50  0001 C CNN
+	1    6950 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x05 J1
+U 1 1 5C26667B
+P 5700 1800
+F 0 "J1" V 5666 1512 50  0000 R CNN
+F 1 "ENCODER-PANEL-1" V 5575 1512 50  0000 R CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 5700 1800 50  0001 C CNN
+F 3 "~" H 5700 1800 50  0001 C CNN
+	1    5700 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 5C266772
+P 4750 1800
+F 0 "J5" V 4623 2080 50  0000 L CNN
+F 1 "MDAC-INPUT-SELECTOR" V 4714 2080 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 4750 1800 50  0001 C CNN
+F 3 "~" H 4750 1800 50  0001 C CNN
+	1    4750 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5C26682E
+P 8250 1800
+F 0 "J3" H 8329 1792 50  0000 L CNN
+F 1 "5V" H 8329 1701 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 8250 1800 50  0001 C CNN
+F 3 "~" H 8250 1800 50  0001 C CNN
+	1    8250 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J4
+U 1 1 5C2668A5
+P 8800 1800
+F 0 "J4" H 8879 1792 50  0000 L CNN
+F 1 "3.3V" H 8879 1701 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 8800 1800 50  0001 C CNN
+F 3 "~" H 8800 1800 50  0001 C CNN
+	1    8800 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L adafruit-itsybitsy:m0-express U1
+U 1 1 5C26DA4B
+P 6150 4200
+F 0 "U1" H 6150 5025 50  0000 C CNN
+F 1 "m0-express" H 6150 4934 50  0000 C CNN
+F 2 "m0-express:m0-express" H 6200 4200 50  0001 C CNN
+F 3 "" H 6200 4200 50  0001 C CNN
+	1    6150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C26DC76
+P 8250 2400
+F 0 "#PWR?" H 8250 2150 50  0001 C CNN
+F 1 "GND" H 8255 2227 50  0000 C CNN
+F 2 "" H 8250 2400 50  0001 C CNN
+F 3 "" H 8250 2400 50  0001 C CNN
+	1    8250 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C26DC94
+P 8800 2400
+F 0 "#PWR?" H 8800 2150 50  0001 C CNN
+F 1 "GND" H 8805 2227 50  0000 C CNN
+F 2 "" H 8800 2400 50  0001 C CNN
+F 3 "" H 8800 2400 50  0001 C CNN
+	1    8800 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C26DCAB
+P 6750 2400
+F 0 "#PWR?" H 6750 2150 50  0001 C CNN
+F 1 "GND" H 6755 2227 50  0000 C CNN
+F 2 "" H 6750 2400 50  0001 C CNN
+F 3 "" H 6750 2400 50  0001 C CNN
+	1    6750 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C26DCC2
+P 5500 2400
+F 0 "#PWR?" H 5500 2150 50  0001 C CNN
+F 1 "GND" H 5505 2227 50  0000 C CNN
+F 2 "" H 5500 2400 50  0001 C CNN
+F 3 "" H 5500 2400 50  0001 C CNN
+	1    5500 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C26E159
+P 8900 2100
+F 0 "#PWR?" H 8900 1950 50  0001 C CNN
+F 1 "+3V3" H 8915 2273 50  0000 C CNN
+F 2 "" H 8900 2100 50  0001 C CNN
+F 3 "" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C26E219
+P 8350 2100
+F 0 "#PWR?" H 8350 1950 50  0001 C CNN
+F 1 "+5V" H 8365 2273 50  0000 C CNN
+F 2 "" H 8350 2100 50  0001 C CNN
+F 3 "" H 8350 2100 50  0001 C CNN
+	1    8350 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8250 2000 8250 2400
+Wire Wire Line
+	8800 2000 8800 2400
+Wire Wire Line
+	8900 2000 8900 2100
+Wire Wire Line
+	8350 2000 8350 2100
+$Comp
+L power:GND #PWR?
+U 1 1 5C26E452
+P 4550 2400
+F 0 "#PWR?" H 4550 2150 50  0001 C CNN
+F 1 "GND" H 4555 2227 50  0000 C CNN
+F 2 "" H 4550 2400 50  0001 C CNN
+F 3 "" H 4550 2400 50  0001 C CNN
+	1    4550 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5C26E500
+P 4650 2100
+F 0 "#PWR?" H 4650 1950 50  0001 C CNN
+F 1 "+3V3" H 4665 2273 50  0000 C CNN
+F 2 "" H 4650 2100 50  0001 C CNN
+F 3 "" H 4650 2100 50  0001 C CNN
+	1    4650 2100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4550 2000 4550 2400
+Wire Wire Line
+	4650 2100 4650 2000
+$Comp
+L power:+5V #PWR?
+U 1 1 5C26E893
+P 6850 2150
+F 0 "#PWR?" H 6850 2000 50  0001 C CNN
+F 1 "+5V" H 6865 2323 50  0000 C CNN
+F 2 "" H 6850 2150 50  0001 C CNN
+F 3 "" H 6850 2150 50  0001 C CNN
+	1    6850 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C26E8AA
+P 5600 2150
+F 0 "#PWR?" H 5600 2000 50  0001 C CNN
+F 1 "+5V" H 5615 2323 50  0000 C CNN
+F 2 "" H 5600 2150 50  0001 C CNN
+F 3 "" H 5600 2150 50  0001 C CNN
+	1    5600 2150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5600 2000 5600 2150
+Wire Wire Line
+	6850 2000 6850 2150
+Wire Wire Line
+	5500 2000 5500 2400
+Wire Wire Line
+	6750 2000 6750 2400
+$Comp
+L Connector_Generic:Conn_01x02 J?
+U 1 1 5C26EEAE
+P 9350 1800
+F 0 "J?" H 9429 1792 50  0000 L CNN
+F 1 "V-BAT" H 9429 1701 50  0000 L CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 9350 1800 50  0001 C CNN
+F 3 "~" H 9350 1800 50  0001 C CNN
+	1    9350 1800
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C26EEFA
+P 9350 2400
+F 0 "#PWR?" H 9350 2150 50  0001 C CNN
+F 1 "GND" H 9355 2227 50  0000 C CNN
+F 2 "" H 9350 2400 50  0001 C CNN
+F 3 "" H 9350 2400 50  0001 C CNN
+	1    9350 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9350 2000 9350 2400
+Wire Wire Line
+	9450 2000 9450 3100
+Wire Wire Line
+	9450 3100 9100 3100
+$EndSCHEMATC
