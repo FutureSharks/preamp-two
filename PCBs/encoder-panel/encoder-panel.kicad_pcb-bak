@@ -12,7 +12,7 @@
   (page A4)
   (layers
     (0 F.Cu signal)
-    (31 B.Cu signal hide)
+    (31 B.Cu signal)
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
@@ -1850,8 +1850,6 @@
   (gr_line (start 152.4 73.66) (end 152.4 129.54) (layer Dwgs.User) (width 0.2))
   (gr_circle (center 152.4 101.6) (end 176.4 101.6) (layer Dwgs.User) (width 0.2))
 
-  (via (at 135.89 95.758) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
-  (via (at 136.017 101.981) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
   (segment (start 147.449782 85.725211) (end 150.8 80.1) (width 0.35) (layer F.Cu) (net 1))
   (segment (start 158.971367 81.116404) (end 154 85) (width 0.35) (layer F.Cu) (net 2))
   (segment (start 160.052633 86.868) (end 166.393259 85.181177) (width 0.35) (layer F.Cu) (net 3))
@@ -1860,6 +1858,8 @@
   (segment (start 172.801798 108.425367) (end 169 103.2) (width 0.35) (layer F.Cu) (net 6))
   (segment (start 168.725782 115.663041) (end 167.050202 109.506633) (width 0.35) (layer F.Cu) (net 7))
   (segment (start 162.311564 120.777422) (end 162.998218 114.460959) (width 0.35) (layer F.Cu) (net 8))
+  (via (at 135.89 95.758) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
+  (via (at 136.017 101.981) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 10))
   (segment (start 142.239999 99.060001) (end 142.24 99.06) (width 0.6) (layer B.Cu) (net 10))
   (segment (start 123.571 99.060001) (end 142.239999 99.060001) (width 0.6) (layer B.Cu) (net 10))
   (segment (start 152.4 119.1625) (end 147.193 118.081707) (width 0.6) (layer B.Cu) (net 10))
