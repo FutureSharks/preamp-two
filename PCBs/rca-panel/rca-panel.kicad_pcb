@@ -21,16 +21,16 @@
     (37 F.SilkS user)
     (38 B.Mask user)
     (39 F.Mask user)
-    (40 Dwgs.User user)
+    (40 Dwgs.User user hide)
     (41 Cmts.User user)
     (42 Eco1.User user)
     (43 Eco2.User user)
     (44 Edge.Cuts user)
     (45 Margin user)
-    (46 B.CrtYd user)
-    (47 F.CrtYd user)
-    (48 B.Fab user)
-    (49 F.Fab user)
+    (46 B.CrtYd user hide)
+    (47 F.CrtYd user hide)
+    (48 B.Fab user hide)
+    (49 F.Fab user hide)
   )
 
   (setup
@@ -152,14 +152,14 @@
     (add_net "Net-(OUT1-Pad3)")
   )
 
-  (module Symbol:OSHW-Logo2_7.3x6mm_SilkScreen (layer Bottom) (tedit 0) (tstamp 5C36FFC0)
+  (module Symbol:OSHW-Logo2_7.3x6mm_SilkScreen (layer Bottom) (tedit 5C30E745) (tstamp 5C36FFC0)
     (at 73.025 67.945 180)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     (path /5C2A8D32)
     (attr virtual)
-    (fp_text reference LOGO2 (at 0 0 -90) (layer B.SilkS) hide
-      (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
+    (fp_text reference LOGO2 (at 0 0 270) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Logo_Open_Hardware_Small (at 0.75 0 180) (layer B.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)) (justify mirror))
@@ -446,13 +446,13 @@
       (xy -2.549664 -1.91989) (xy -2.469928 -1.911165) (xy -2.400256 -1.919918)) (layer B.SilkS) (width 0.01))
   )
 
-  (module Symbol:OSHW-Logo2_7.3x6mm_SilkScreen (layer Top) (tedit 0) (tstamp 5C36FFAF)
+  (module Symbol:OSHW-Logo2_7.3x6mm_SilkScreen (layer Top) (tedit 5C30E74A) (tstamp 5C36FFAF)
     (at 73.025 67.945)
     (descr "Open Source Hardware Symbol")
     (tags "Logo Symbol OSHW")
     (path /5C327FDF)
     (attr virtual)
-    (fp_text reference LOGO1 (at 0 0) (layer F.SilkS) hide
+    (fp_text reference LOGO1 (at 0 0) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value Logo_Open_Hardware_Small (at 0.75 0) (layer F.Fab) hide
@@ -992,13 +992,13 @@
     )
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C2A6391) (tstamp 5C34741D)
+  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C30E761) (tstamp 5C34741D)
     (at 189.865 67.945)
     (descr "Mounting Hole 3.2mm, no annular, M3, ISO7380")
     (tags "mounting hole 3.2mm no annular m3 iso7380")
     (path /5C27ADA8)
     (attr virtual)
-    (fp_text reference MH5 (at 0 -3.85) (layer F.SilkS) hide
+    (fp_text reference MH5 (at 0 -3.85) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.85) (layer F.Fab)
@@ -1012,13 +1012,13 @@
     (pad 1 thru_hole circle (at 0 0) (size 6.1 6.1) (drill 3.05) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C2A63A3) (tstamp 5C27A6CB)
+  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C30E765) (tstamp 5C27A6CB)
     (at 189.865 111.125)
     (descr "Mounting Hole 3.2mm, no annular, M3, ISO7380")
     (tags "mounting hole 3.2mm no annular m3 iso7380")
     (path /5C27ADAF)
     (attr virtual)
-    (fp_text reference MH6 (at 0 -3.85) (layer F.SilkS) hide
+    (fp_text reference MH6 (at 0 -3.85) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.85) (layer F.Fab)
@@ -1032,13 +1032,13 @@
     (pad 1 thru_hole circle (at 0 0) (size 6.1 6.1) (drill 3.05) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C2A63A9) (tstamp 5C2760B1)
+  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C30E759) (tstamp 5C2760B1)
     (at 108.585 111.125)
     (descr "Mounting Hole 3.2mm, no annular, M3, ISO7380")
     (tags "mounting hole 3.2mm no annular m3 iso7380")
     (path /5C27ADB6)
     (attr virtual)
-    (fp_text reference MH7 (at 0 -3.85) (layer F.SilkS) hide
+    (fp_text reference MH7 (at 0 -3.85) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.85) (layer F.Fab)
@@ -1052,13 +1052,13 @@
     (pad 1 thru_hole circle (at 0 0) (size 6.1 6.1) (drill 3.05) (layers *.Cu *.Mask))
   )
 
-  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C2A6387) (tstamp 5C2760B9)
+  (module MountingHole:MountingHole_3.2mm_M3_ISO7380 (layer Top) (tedit 5C30E751) (tstamp 5C2760B9)
     (at 108.585 67.945)
     (descr "Mounting Hole 3.2mm, no annular, M3, ISO7380")
     (tags "mounting hole 3.2mm no annular m3 iso7380")
     (path /5C27ADBD)
     (attr virtual)
-    (fp_text reference MH8 (at 0 -3.85) (layer F.SilkS) hide
+    (fp_text reference MH8 (at 0 -3.85) (layer F.Fab) hide
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value MountingHole (at 0 3.85) (layer F.Fab)
