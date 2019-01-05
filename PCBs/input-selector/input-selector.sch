@@ -42,7 +42,7 @@ U 1 1 5C2765A5
 P 11100 8050
 F 0 "MUTE1" H 11730 8096 50  0000 L CNN
 F 1 "IM01" H 11730 8005 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 8050 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 8050 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 8050 50  0001 C CNN
 	1    11100 8050
 	1    0    0    1   
@@ -53,7 +53,7 @@ U 1 1 5C276600
 P 11100 2900
 F 0 "K2" H 11730 2946 50  0000 L CNN
 F 1 "IM40" H 11730 2855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 2900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 2900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 2900 50  0001 C CNN
 	1    11100 2900
 	1    0    0    1   
@@ -64,7 +64,7 @@ U 1 1 5C276C21
 P 11100 1900
 F 0 "K1" H 11730 1946 50  0000 L CNN
 F 1 "IM40" H 11730 1855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 1900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 1900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 1900 50  0001 C CNN
 	1    11100 1900
 	1    0    0    1   
@@ -75,7 +75,7 @@ U 1 1 5C276C46
 P 11100 3900
 F 0 "K3" H 11730 3946 50  0000 L CNN
 F 1 "IM40" H 11730 3855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 3900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 3900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 3900 50  0001 C CNN
 	1    11100 3900
 	1    0    0    1   
@@ -86,7 +86,7 @@ U 1 1 5C276C71
 P 11100 4900
 F 0 "K4" H 11730 4946 50  0000 L CNN
 F 1 "IM40" H 11730 4855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 4900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 4900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 4900 50  0001 C CNN
 	1    11100 4900
 	1    0    0    1   
@@ -97,7 +97,7 @@ U 1 1 5C276C9E
 P 11100 5900
 F 0 "K5" H 11730 5946 50  0000 L CNN
 F 1 "IM40" H 11730 5855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 5900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 5900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 5900 50  0001 C CNN
 	1    11100 5900
 	1    0    0    1   
@@ -108,7 +108,7 @@ U 1 1 5C276CC9
 P 11100 6900
 F 0 "K6" H 11730 6946 50  0000 L CNN
 F 1 "IM40" H 11730 6855 50  0000 L CNN
-F 2 "w_relay:relay_gq-pth" H 10900 6900 50  0001 C CNN
+F 2 "panasonic-relay:gq-th" H 10900 6900 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=108-98001&DocType=SS&DocLang=EN" H 10900 6900 50  0001 C CNN
 	1    11100 6900
 	1    0    0    1   
