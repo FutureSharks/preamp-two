@@ -26,7 +26,7 @@ Here is the DIYAudio forum thread with my prototypes and questions: [Solid state
 
 ### Photos
 
-![photo](../../../master/images/mdac_attenuator_1.jpeg?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3d.png" width="600">
 
 ### Code
 
@@ -34,13 +34,13 @@ CircuitPython module is here: [code/modules/input_selector.py](https://github.co
 
 ### Schematic
 
-![schematic](../master/images/mdac_attenuator_schematic.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_schematic.png" width="900">
 
 ### Layout
 
-![PCB front](../master/images/mdac_attenuator_pcb_front.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_front.png" width="900">
 
-![PCB back](../master/images/mdac_attenuator_pcb_back.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_back.png" width="900">
 
 ### BoM
 

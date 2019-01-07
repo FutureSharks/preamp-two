@@ -12,7 +12,7 @@
 
 ### Photos
 
-![photo](../../../master/images/input_selector_1.jpeg?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_3d.png" width="600">
 
 ### Code
 
@@ -20,13 +20,13 @@ CircuitPython module is here: [code/modules/input_selector.py](https://github.co
 
 ### Schematic
 
-![schematic](../master/images/input_selector_schematic.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_schematic.png" width="900">
 
 ### Layout
 
-![PCB front](../master/images/input_selector_pcb_front.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_pcb_front.png" width="900">
 
-![PCB back](../master/imagesinput_selector_pcb_back.png?raw=true)
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_pcb_back.png" width="900">
 
 ### BoM
 
