@@ -1,10 +1,50 @@
 # MDAC attenuator
 
-![page break](../../../master/images/page-break-mdac-attenuator.png?raw=true)
+<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_mdac_attenuator.png" width="900"></a>
+
+Based on designs from these sources:
+
+- [Precision, AC Reference Signal Attenuator Using the AD5546/AD5556 Multiplying DAC](https://www.analog.com/media/en/technical-documentation/application-notes/AN-1488.pdf)
+- [New High-Resolution Multiplying DACs Excel at Handling AC Signals](https://www.analog.com/en/analog-dialogue/articles/high-resolution-multiplying-dacs.html)
+
+This design is also used by a number manufacturers:
+
+- Mark Levinson preamps
+- Luxman LECUA (Luxman Electronically Controlled Ultimate Attenuator)
+- Accuphase [AAVA](http://www.accuphase.com/aava.html)
+
+Features:
+
+* 65536 linear steps
+* Gain possible, set by op-amp and resistors
+* Excellent performance
+* Can drive headphones
+* Compact
+* SPI controlled
+
+Here is the DIYAudio forum thread with my prototypes and questions: [Solid state R2R attenuator using analog switches or multiplying DAC](https://www.diyaudio.com/forums/analog-line-level/235853-solid-r2r-attenuator-using-analog-switches-multiplying-dac.html)
+
+### Photos
+
+<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3d.png" width="600"></a>
+
+### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+
+CircuitPython module is here: [code/modules/input_selector.py](https://github.com/FutureSharks/preamp-two/blob/master/code/modules/mdac_attenuator.py)
+
+### Schematic
+
+<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_schematic.png" width="900"></a>
+
+### Layout
+
+<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_front.png" width="600"></a>
+
+<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_back.png" width="600"></a>
 
 ### BoM
 
-| Reference                |  Quantity |  Value  |  Footprint       |
+| Reference                |  Quantity |  Value  |  Footprint / Notes  |
 |--------------------------|-----------|---------|------------------|
 | C1A1, C1B1               | 2         | 2pF           | 0805       |
 | C4, C6, C7               | 3         | 100nF         | 1206       |
@@ -18,7 +58,7 @@
 | R2A1, R2B1, R4A1, R4B1   | 4         | 120R          | 1206 |
 | R3A1, R3B1               | 2         | 360R          | 1206 |
 | U1                       | 1         | AD8599ARZ     | SOIC-8 |
-| U2                       | 1         | DAC8812ICPWG4 | TSSOP-16 |
+| U2                       | 1         | DAC8812ICPWG4 | TSSOP-16 | Can also use AD5545
 
 Values for R1, R2 and R3 above give a gain of 4.
 
@@ -29,8 +69,4 @@ gain = (R2+R3)/R2
 R1 = (R2*R3)/(R2+R3)
 ```
 
-This was copied from the [AD5429/AD5439/AD5449 datasheet](http://www.analog.com/media/en/technical-documentation/data-sheets/AD5429_5439_5449.pdf)
-
-### Images
-
-![pcb front](../../../master/images/mdac-attenuator-pcb-front.png?raw=true)
+Refer to the [AD5429/AD5439/AD5449 datasheet](http://www.analog.com/media/en/technical-documentation/data-sheets/AD5429_5439_5449.pdf)
