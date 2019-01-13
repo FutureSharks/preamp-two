@@ -1,0 +1,7 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SN74AHCT125
+D Quadruple Bus Buffer Gates with 3-State Outputs
+$ENDCMP
+#
+#End Doc Library

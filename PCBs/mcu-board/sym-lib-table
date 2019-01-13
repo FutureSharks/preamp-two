@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name adafruit-itsybitsy)(type Legacy)(uri ${KIPRJMOD}/adafruit-itsybitsy.lib)(options "")(descr ""))
+  (lib (name SN74AHCT125)(type Legacy)(uri ${KIPRJMOD}/SN74AHCT125.lib)(options "")(descr ""))
 )
