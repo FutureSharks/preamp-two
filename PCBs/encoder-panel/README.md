@@ -11,7 +11,7 @@ The module is the sole human interface to the preamp. It consists of 2 things:
 
 ### Photos
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_3d.png" width="600"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_3d.png" width="600">
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
@@ -19,13 +19,13 @@ CircuitPython module is here: [code/modules/encoder_panel.py](https://github.com
 
 ### Schematic
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_schematic.png" width="900"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_schematic.png" width="900">
 
 ### Layout
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_front.png" width="600"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_front.png" width="600">
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_back.png" width="600"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_back.png" width="600">
 
 ### BoM
 

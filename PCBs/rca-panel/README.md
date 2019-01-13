@@ -6,7 +6,7 @@ This PCB provides mounting for the RCA sockets and [input selector](https://gith
 
 ### Photos
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_3d.png" width="600"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_3d.png" width="600">
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
@@ -14,11 +14,11 @@ N/A
 
 ### Schematic
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_schematic.png" width="900"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_schematic.png" width="900">
 
 ### Layout
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_pcb_front.png" width="900"></a>
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_pcb_front.png" width="900">
 
 ### BoM
 
