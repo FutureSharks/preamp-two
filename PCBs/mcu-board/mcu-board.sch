@@ -323,17 +323,17 @@ Wire Wire Line
 Wire Wire Line
 	3350 2650 3350 2350
 Text GLabel 3450 2350 1    50   Input ~ 0
-encoder_1_neopixel_3v
+panel_1_neopixel_3v
 Text GLabel 3150 2350 1    50   Input ~ 0
-encoder_2_neopixel_3v
+panel_2_neopixel_3v
 Text GLabel 6600 4500 2    50   Input ~ 0
-encoder_1_neopixel_3v
+panel_1_neopixel_3v
 Text GLabel 6600 4200 2    50   Input ~ 0
-encoder_2_neopixel_3v
+panel_2_neopixel_3v
 Text GLabel 3050 2350 1    50   Input ~ 0
-encoder_2_neopixel_5v
+panel_2_neopixel_5v
 Text GLabel 3350 2350 1    50   Input ~ 0
-encoder_1_neopixel_5v
+panel_1_neopixel_5v
 Wire Wire Line
 	3550 2650 3550 2600
 Wire Wire Line
@@ -360,8 +360,6 @@ Wire Wire Line
 	3150 4350 3150 4450
 Wire Wire Line
 	3150 4450 3450 4450
-Wire Wire Line
-	3550 4450 3550 4600
 Wire Wire Line
 	3550 4350 3550 4450
 Connection ~ 3550 4450
@@ -437,45 +435,37 @@ F 3 "" H 1150 2700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 1500 2350 1    50   Input ~ 0
-encoder_2_A_5v
+panel_2_encoder_A_5v
 Text GLabel 1800 2350 1    50   Input ~ 0
-encoder_2_B_5v
+panel_2_encoder_B_5v
 Wire Wire Line
 	1500 2650 1500 2350
 Wire Wire Line
 	1800 2650 1800 2350
 Text GLabel 1400 2350 1    50   Input ~ 0
-encoder_2_A_3v
+panel_2_encoder_A_3v
 Text GLabel 1700 2350 1    50   Input ~ 0
-encoder_2_B_3v
-Wire Wire Line
-	1400 2350 1400 2650
-Wire Wire Line
-	1700 2350 1700 2650
+panel_2_encoder_B_3v
 Text GLabel 6600 4400 2    50   Input ~ 0
-encoder_2_B_3v
+panel_2_encoder_B_3v
 Text GLabel 6600 4300 2    50   Input ~ 0
-encoder_2_A_3v
+panel_2_encoder_A_3v
 Text GLabel 1300 4600 3    50   Input ~ 0
-encoder_1_A_3v
+panel_1_encoder_A_3v
 Text GLabel 1400 4600 3    50   Input ~ 0
-encoder_1_A_5v
+panel_1_encoder_A_5v
 Text GLabel 1600 4600 3    50   Input ~ 0
-encoder_1_B_3v
+panel_1_encoder_B_3v
 Text GLabel 1700 4600 3    50   Input ~ 0
-encoder_1_B_5v
-Wire Wire Line
-	1600 4350 1600 4600
+panel_1_encoder_B_5v
 Wire Wire Line
 	1700 4350 1700 4600
 Wire Wire Line
 	1400 4600 1400 4350
-Wire Wire Line
-	1300 4350 1300 4600
 Text GLabel 6600 4700 2    50   Input ~ 0
-encoder_1_B_3v
+panel_1_encoder_B_3v
 Text GLabel 6600 4600 2    50   Input ~ 0
-encoder_1_A_3v
+panel_1_encoder_A_3v
 $Comp
 L power:+3V3 #PWR0119
 U 1 1 5C4A5722
@@ -487,8 +477,6 @@ F 3 "" H 1900 4550 50  0001 C CNN
 	1    1900 4550
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	1900 4550 1900 4450
 $Comp
 L Device:LED LED_3V1
 U 1 1 5C4CD178
@@ -596,10 +584,6 @@ BAT
 Wire Wire Line
 	8350 1800 8350 1950
 Wire Wire Line
-	3150 2650 3150 2350
-Wire Wire Line
-	3450 2650 3450 2350
-Wire Wire Line
 	2950 2600 2800 2600
 Wire Wire Line
 	2800 2600 2800 2700
@@ -610,10 +594,6 @@ Wire Wire Line
 	1150 2550 1150 2700
 Connection ~ 1300 2550
 Wire Wire Line
-	6350 4200 6600 4200
-Wire Wire Line
-	6350 4300 6600 4300
-Wire Wire Line
 	6350 4400 6600 4400
 Wire Wire Line
 	6350 4500 6600 4500
@@ -622,17 +602,17 @@ Wire Wire Line
 Wire Wire Line
 	6350 4700 6600 4700
 Text GLabel 6000 2050 3    50   Input ~ 0
-encoder_2_neopixel_5v
+panel_2_neopixel_5v
 Text GLabel 4650 2050 3    50   Input ~ 0
-encoder_1_neopixel_5v
+panel_1_neopixel_5v
 Text GLabel 6200 2050 3    50   Input ~ 0
-encoder_2_B_5v
+panel_2_encoder_B_5v
 Text GLabel 6100 2050 3    50   Input ~ 0
-encoder_2_A_5v
+panel_2_encoder_A_5v
 Text GLabel 4850 2050 3    50   Input ~ 0
-encoder_1_B_5v
+panel_1_encoder_B_5v
 Text GLabel 4750 2050 3    50   Input ~ 0
-encoder_1_A_5v
+panel_1_encoder_A_5v
 Wire Wire Line
 	6000 1800 6000 2050
 Wire Wire Line
@@ -764,7 +744,6 @@ Wire Wire Line
 	1900 4450 2200 4450
 Wire Wire Line
 	2200 4450 2200 4350
-Connection ~ 1900 4450
 Wire Wire Line
 	1900 4450 1900 4350
 Wire Wire Line
@@ -793,4 +772,25 @@ F 3 "" H 3850 3950 50  0001 C CNN
 	1    3850 3950
 	-1   0    0    1   
 $EndComp
+Wire Wire Line
+	1400 2650 1400 2350
+Wire Wire Line
+	3150 2650 3150 2350
+Wire Wire Line
+	1700 2650 1700 2350
+Wire Wire Line
+	3450 2650 3450 2350
+Wire Wire Line
+	1300 4600 1300 4350
+Wire Wire Line
+	1600 4600 1600 4350
+Wire Wire Line
+	1900 4450 1900 4550
+Connection ~ 1900 4450
+Wire Wire Line
+	3550 4450 3550 4600
+Wire Wire Line
+	6600 4200 6350 4200
+Wire Wire Line
+	6350 4300 6600 4300
 $EndSCHEMATC
