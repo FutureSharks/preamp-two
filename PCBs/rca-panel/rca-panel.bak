@@ -152,7 +152,7 @@ U 1 1 5C27AD1C
 P 8150 2500
 F 0 "OUT_L1" H 8249 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 8249 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 8150 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 8150 2500 50  0001 C CNN
 F 3 " ~" H 8150 2500 50  0001 C CNN
 	1    8150 2500
 	1    0    0    -1  
@@ -465,10 +465,10 @@ Wire Wire Line
 	8150 3600 8150 3100
 Connection ~ 8150 3100
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO?
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5C327FDF
 P 2950 4700
-F 0 "LOGO?" H 2950 4975 50  0001 C CNN
+F 0 "LOGO1" H 2950 4975 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 2950 4475 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 2950 4700 50  0001 C CNN
 F 3 "~" H 2950 4700 50  0001 C CNN
@@ -476,10 +476,10 @@ F 3 "~" H 2950 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small LOGO?
+L Graphic:Logo_Open_Hardware_Small LOGO2
 U 1 1 5C2A8D32
 P 3450 4700
-F 0 "LOGO?" H 3450 4975 50  0001 C CNN
+F 0 "LOGO2" H 3450 4975 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 3450 4475 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_7.3x6mm_SilkScreen" H 3450 4700 50  0001 C CNN
 F 3 "~" H 3450 4700 50  0001 C CNN

@@ -20,7 +20,7 @@ U 1 1 5C27ACC8
 P 2750 2500
 F 0 "RCA_1_L1" H 2849 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 2849 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 2750 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 2750 2500 50  0001 C CNN
 F 3 " ~" H 2750 2500 50  0001 C CNN
 	1    2750 2500
 	1    0    0    -1  
@@ -31,7 +31,7 @@ U 1 1 5C27ACCF
 P 2750 2900
 F 0 "RCA_1_R1" H 2849 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 2849 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 2750 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 2750 2900 50  0001 C CNN
 F 3 " ~" H 2750 2900 50  0001 C CNN
 	1    2750 2900
 	1    0    0    -1  
@@ -42,7 +42,7 @@ U 1 1 5C27ACD6
 P 3550 2500
 F 0 "RCA_2_L1" H 3649 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 3649 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 3550 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 3550 2500 50  0001 C CNN
 F 3 " ~" H 3550 2500 50  0001 C CNN
 	1    3550 2500
 	1    0    0    -1  
@@ -53,7 +53,7 @@ U 1 1 5C27ACDD
 P 3550 2900
 F 0 "RCA_2_R1" H 3649 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 3649 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 3550 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 3550 2900 50  0001 C CNN
 F 3 " ~" H 3550 2900 50  0001 C CNN
 	1    3550 2900
 	1    0    0    -1  
@@ -64,7 +64,7 @@ U 1 1 5C27ACE4
 P 4350 2500
 F 0 "RCA_3_L1" H 4449 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 4449 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 4350 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 4350 2500 50  0001 C CNN
 F 3 " ~" H 4350 2500 50  0001 C CNN
 	1    4350 2500
 	1    0    0    -1  
@@ -75,7 +75,7 @@ U 1 1 5C27ACEB
 P 4350 2900
 F 0 "RCA_3_R1" H 4449 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 4449 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 4350 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 4350 2900 50  0001 C CNN
 F 3 " ~" H 4350 2900 50  0001 C CNN
 	1    4350 2900
 	1    0    0    -1  
@@ -86,7 +86,7 @@ U 1 1 5C27ACF2
 P 5150 2500
 F 0 "RCA_4_L1" H 5249 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5249 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 5150 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 5150 2500 50  0001 C CNN
 F 3 " ~" H 5150 2500 50  0001 C CNN
 	1    5150 2500
 	1    0    0    -1  
@@ -97,7 +97,7 @@ U 1 1 5C27ACF9
 P 5150 2900
 F 0 "RCA_4_R1" H 5249 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 5249 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 5150 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 5150 2900 50  0001 C CNN
 F 3 " ~" H 5150 2900 50  0001 C CNN
 	1    5150 2900
 	1    0    0    -1  
@@ -108,7 +108,7 @@ U 1 1 5C27AD00
 P 5950 2500
 F 0 "RCA_5_L1" H 6049 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6049 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 5950 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 5950 2500 50  0001 C CNN
 F 3 " ~" H 5950 2500 50  0001 C CNN
 	1    5950 2500
 	1    0    0    -1  
@@ -119,7 +119,7 @@ U 1 1 5C27AD07
 P 5950 2900
 F 0 "RCA_5_R1" H 6049 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6049 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 5950 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 5950 2900 50  0001 C CNN
 F 3 " ~" H 5950 2900 50  0001 C CNN
 	1    5950 2900
 	1    0    0    -1  
@@ -130,7 +130,7 @@ U 1 1 5C27AD0E
 P 6750 2500
 F 0 "RCA_6_L1" H 6849 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6849 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 6750 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 6750 2500 50  0001 C CNN
 F 3 " ~" H 6750 2500 50  0001 C CNN
 	1    6750 2500
 	1    0    0    -1  
@@ -141,7 +141,7 @@ U 1 1 5C27AD15
 P 6750 2900
 F 0 "RCA_6_R1" H 6849 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 6849 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 6750 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 6750 2900 50  0001 C CNN
 F 3 " ~" H 6750 2900 50  0001 C CNN
 	1    6750 2900
 	1    0    0    -1  
@@ -152,7 +152,7 @@ U 1 1 5C27AD1C
 P 8150 2500
 F 0 "OUT_L1" H 8249 2476 50  0000 L CNN
 F 1 "Conn_Coaxial" H 8249 2385 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 8150 2500 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 8150 2500 50  0001 C CNN
 F 3 " ~" H 8150 2500 50  0001 C CNN
 	1    8150 2500
 	1    0    0    -1  
@@ -163,7 +163,7 @@ U 1 1 5C27AD23
 P 8150 2900
 F 0 "OUT_R1" H 8249 2876 50  0000 L CNN
 F 1 "Conn_Coaxial" H 8249 2785 50  0000 L CNN
-F 2 "rca-panel:cmc-805" H 8150 2900 50  0001 C CNN
+F 2 "rca-panel:cmc-805-new" H 8150 2900 50  0001 C CNN
 F 3 " ~" H 8150 2900 50  0001 C CNN
 	1    8150 2900
 	1    0    0    -1  
