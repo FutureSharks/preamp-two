@@ -15,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Connector_Generic:Conn_01x05 J2
+L Connector_Generic:Conn_01x05 ENCODER-PANEL-2
 U 1 1 5C266616
 P 6000 1600
-F 0 "J2" V 5966 1312 50  0000 R CNN
+F 0 "ENCODER-PANEL-2" V 5966 1312 50  0000 R CNN
 F 1 "ENCODER-PANEL-2" V 5875 1312 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 6000 1600 50  0001 C CNN
 F 3 "~" H 6000 1600 50  0001 C CNN
@@ -26,10 +26,10 @@ F 3 "~" H 6000 1600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x05 J1
+L Connector_Generic:Conn_01x05 ENCODER-PANEL-1
 U 1 1 5C26667B
 P 4650 1600
-F 0 "J1" V 4616 1312 50  0000 R CNN
+F 0 "ENCODER-PANEL-1" V 4616 1312 50  0000 R CNN
 F 1 "ENCODER-PANEL-1" V 4525 1312 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 4650 1600 50  0001 C CNN
 F 3 "~" H 4650 1600 50  0001 C CNN
@@ -793,4 +793,15 @@ Wire Wire Line
 	6600 4200 6350 4200
 Wire Wire Line
 	6350 4300 6600 4300
+$Comp
+L Graphic:Logo_Open_Hardware_Large #LOGO1
+U 1 1 5C596626
+P 1200 7150
+F 0 "#LOGO1" H 1200 7650 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Large" H 1200 6750 50  0001 C CNN
+F 2 "" H 1200 7150 50  0001 C CNN
+F 3 "~" H 1200 7150 50  0001 C CNN
+	1    1200 7150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
