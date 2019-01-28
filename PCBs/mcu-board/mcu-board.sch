@@ -794,14 +794,25 @@ Wire Wire Line
 Wire Wire Line
 	6350 4300 6600 4300
 $Comp
-L Graphic:Logo_Open_Hardware_Large #LOGO1
-U 1 1 5C596626
-P 1200 7150
-F 0 "#LOGO1" H 1200 7650 50  0001 C CNN
-F 1 "Logo_Open_Hardware_Large" H 1200 6750 50  0001 C CNN
-F 2 "" H 1200 7150 50  0001 C CNN
-F 3 "~" H 1200 7150 50  0001 C CNN
-	1    1200 7150
+L Graphic:Logo_Open_Hardware_Small LOGO1
+U 1 1 5C4FB3BF
+P 1000 7350
+F 0 "LOGO1" H 1000 7625 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1000 7125 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 1000 7350 50  0001 C CNN
+F 3 "~" H 1000 7350 50  0001 C CNN
+	1    1000 7350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Graphic:Logo_Open_Hardware_Small LOGO2
+U 1 1 5C4FB40D
+P 1550 7350
+F 0 "LOGO2" H 1550 7625 50  0001 C CNN
+F 1 "Logo_Open_Hardware_Small" H 1550 7125 50  0001 C CNN
+F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 1550 7350 50  0001 C CNN
+F 3 "~" H 1550 7350 50  0001 C CNN
+	1    1550 7350
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
