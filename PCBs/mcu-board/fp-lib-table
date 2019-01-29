@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name m0-express)(type KiCad)(uri ${KIPRJMOD}/m0-express.pretty)(options "")(descr ""))
+  (lib (name mcu-board)(type KiCad)(uri /Users/max/git/preamp-two/PCBs/mcu-board)(options "")(descr ""))
 )
