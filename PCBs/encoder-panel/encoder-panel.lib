@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# EN1AJ-B28-Bournes-EN-encoder
+# ENA1J-B28-Bournes-EN-encoder
 #
-DEF EN1AJ-B28-Bournes-EN-encoder U 0 40 Y Y 1 F N
+DEF ENA1J-B28-Bournes-EN-encoder U 0 40 Y Y 1 F N
 F0 "U" 0 -150 50 H V C CNN
-F1 "EN1AJ-B28-Bournes-EN-encoder" 0 -300 50 H V C CNN
+F1 "ENA1J-B28-Bournes-EN-encoder" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW

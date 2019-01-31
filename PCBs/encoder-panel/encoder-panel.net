@@ -65,9 +65,9 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5BB4C316))
     (comp (ref U1)
-      (value EN1AJ-B28)
-      (footprint Bournes-EN:EN1AJ-B28-L100128L-H)
-      (libsource (lib Bournes-EN-encoder) (part EN1AJ-B28) (description ""))
+      (value ENA1J-B28)
+      (footprint Bournes-EN:ENA1J-B28-L100128L-H)
+      (libsource (lib Bournes-EN-encoder) (part ENA1J-B28) (description ""))
       (sheetpath (names /) (tstamps /))
       (tstamp 5BB4E9FF))
     (comp (ref D13)
@@ -309,10 +309,10 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 5BBA57BB)))
   (libparts
-    (libpart (lib Bournes-EN-encoder) (part EN1AJ-B28)
+    (libpart (lib Bournes-EN-encoder) (part ENA1J-B28)
       (fields
         (field (name Reference) U)
-        (field (name Value) EN1AJ-B28))
+        (field (name Value) ENA1J-B28))
       (pins
         (pin (num 1) (name B) (type output))
         (pin (num 2) (name VCC) (type power_in))
