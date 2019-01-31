@@ -1,23 +1,6 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Bournes-EN-encoder_EN1AJ-B28
-#
-DEF Bournes-EN-encoder_EN1AJ-B28 U 0 40 Y Y 1 F N
-F0 "U" 0 -150 50 H V C CNN
-F1 "Bournes-EN-encoder_EN1AJ-B28" 0 -250 50 H V C CNN
-F2 "" 0 50 50 H I C CNN
-F3 "" 0 50 50 H I C CNN
-DRAW
-C 0 0 71 0 1 0 N
-S -200 250 200 -200 0 1 0 N
-X B 1 -150 350 100 D 50 35 1 1 O
-X VCC 2 -50 350 100 D 50 35 1 1 W
-X A 3 50 350 100 D 50 35 1 1 O
-X GND 4 150 350 100 D 50 35 1 1 W
-ENDDRAW
-ENDDEF
-#
 # Connector_Generic_Conn_01x05
 #
 DEF Connector_Generic_Conn_01x05 J 0 40 Y N 1 F N
@@ -140,6 +123,23 @@ $FPLIST
 $ENDFPLIST
 DRAW
 C 0 0 50 0 1 50 N
+ENDDRAW
+ENDDEF
+#
+# encoder-panel_ENA1J-B28
+#
+DEF encoder-panel_ENA1J-B28 U 0 40 Y Y 1 F N
+F0 "U" 0 -150 50 H V C CNN
+F1 "encoder-panel_ENA1J-B28" 0 -250 50 H V C CNN
+F2 "" 0 50 50 H I C CNN
+F3 "" 0 50 50 H I C CNN
+DRAW
+C 0 0 71 0 1 0 N
+S -200 250 200 -200 0 1 0 N
+X B 1 -150 350 100 D 50 35 1 1 O
+X VCC 2 -50 350 100 D 50 35 1 1 W
+X A 3 50 350 100 D 50 35 1 1 O
+X GND 4 150 350 100 D 50 35 1 1 W
 ENDDRAW
 ENDDEF
 #
