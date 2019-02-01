@@ -1024,10 +1024,10 @@ Wire Wire Line
 	3850 5400 3850 5300
 Connection ~ 3600 5400
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO1
+L Graphic:Logo_Open_Hardware_Small LOGO1
 U 1 1 5C582493
 P 950 7350
-F 0 "#LOGO1" H 950 7625 50  0001 C CNN
+F 0 "LOGO1" H 950 7625 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 950 7125 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 950 7350 50  0001 C CNN
 F 3 "~" H 950 7350 50  0001 C CNN
@@ -1035,10 +1035,10 @@ F 3 "~" H 950 7350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Graphic:Logo_Open_Hardware_Small #LOGO2
+L Graphic:Logo_Open_Hardware_Small LOGO2
 U 1 1 5C582C6A
 P 1450 7350
-F 0 "#LOGO2" H 1450 7625 50  0001 C CNN
+F 0 "LOGO2" H 1450 7625 50  0001 C CNN
 F 1 "Logo_Open_Hardware_Small" H 1450 7125 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_9.8x8mm_SilkScreen" H 1450 7350 50  0001 C CNN
 F 3 "~" H 1450 7350 50  0001 C CNN
