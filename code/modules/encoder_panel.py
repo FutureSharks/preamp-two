@@ -2,6 +2,7 @@
 
 import neopixel
 import rotaryio
+import time
 
 
 class EncoderPanel(object):
@@ -48,6 +49,21 @@ class EncoderPanel(object):
             self.ring[n_1] = (255, 0, 0, 0)
 
         self.ring.fill((0, 0, 0, 0))
+
+    def test_ring(self):
+        '''
+        Cycles through colors for the whole ring
+        '''
+        self.ring.fill((255, 0, 0, 0))
+        time.sleep(1)
+        self.ring.fill((0, 255, 0, 0))
+        time.sleep(1)
+        self.ring.fill((0, 0, 255, 0))
+        time.sleep(1)
+        self.ring.fill((0, 0, 0, 255))
+        time.sleep(1)
+        self.ring.fill((0, 0, 0, 0))
+        return
 
     def set_ring_point(self, point):
         '''

@@ -22,6 +22,7 @@ class MdacAttenuator(object):
         Sets the MDAC volume to a specific linear level
         '''
         if level < 0 or level >= 65536:
+            print('mdac-attenuator level must be between 0 and 65536')
             return
         with self._device as device:
             high_byte, low_byte = divmod(level, 256)

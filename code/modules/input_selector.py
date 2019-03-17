@@ -50,7 +50,7 @@ class InputSelector(object):
         Toggles mute relay on/off
         '''
         if self.mute_enabled:
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
             self.mute_enabled = False
             print('input-selector mute disabled')
         else:
@@ -76,27 +76,27 @@ class InputSelector(object):
         if input == 1:
             self._set_gpio(213, 72)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
         elif input == 2:
             self._set_gpio(213, 48)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
         elif input == 3:
             self._set_gpio(212, 208)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
         elif input == 4:
             self._set_gpio(211, 80)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
         elif input == 5:
             self._set_gpio(205, 80)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
         elif input == 6:
             self._set_gpio(181, 80)
             time.sleep(0.01)
-            self._set_gpio(128, 0)
+            self._set_gpio(64, 0)
 
         print('input-selector input {0} selected'.format(input))
         self.input_current = input
@@ -106,3 +106,41 @@ class InputSelector(object):
         Selects the next input
         '''
         self.select_input(input=self.input_current + increment)
+
+
+# print('Switching on')
+# set_gio(64, 0)
+# time.sleep(time_delay)
+# print('Switching mute off')
+# set_gio(0, 0)
+# time.sleep(time_delay)
+# print('Switching relay 1')
+# set_gio(0, 2)
+# time.sleep(time_delay)
+# set_gio(0, 4)
+# time.sleep(time_delay)
+# print('Switching relay 2')
+# set_gio(0, 8)
+# time.sleep(time_delay)
+# set_gio(0, 16)
+# time.sleep(time_delay)
+# print('Switching relay 3')
+# set_gio(0, 32)
+# time.sleep(time_delay)
+# set_gio(0, 64)
+# time.sleep(time_delay)
+# print('Switching relay 4')
+# set_gio(1, 0)
+# time.sleep(time_delay)
+# set_gio(2, 0)
+# time.sleep(time_delay)
+# print('Switching relay 5')
+# set_gio(4, 0)
+# time.sleep(time_delay)
+# set_gio(8, 0)
+# time.sleep(time_delay)
+# print('Switching relay 6')
+# set_gio(16, 0)
+# time.sleep(time_delay)
+# set_gio(32, 0)
+# time.sleep(time_delay)
