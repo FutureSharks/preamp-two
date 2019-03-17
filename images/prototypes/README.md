@@ -4,6 +4,8 @@ I made quite a few test module and prototypes before settling on the current des
 
 ![prototype](prototype-11.gif)
 
+![prototype](prototype-15.gif)
+
 ![prototype](prototype-1.jpg)
 
 ![prototype](prototype-6.jpg)
@@ -23,3 +25,9 @@ I made quite a few test module and prototypes before settling on the current des
 ![prototype](prototype-9.jpg)
 
 ![prototype](prototype-10.jpg)
+
+![prototype](prototype-12.jpg)
+
+![prototype](prototype-13.jpg)
+
+![prototype](prototype-14.jpg)
