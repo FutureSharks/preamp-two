@@ -58,6 +58,23 @@ class InputSelector(object):
             self.mute_enabled = True
             print('input-selector mute enabled')
 
+    def _disable_all_relays(self, with_delay=True):
+        '''
+        Turns off all relays with optional delay
+        '''
+        if with_delay:
+            time.sleep(0.01)
+        self._set_gpio(64, 0)
+
+    def _set_all_relays_to_off(self):
+        '''
+        Switches all relays to off position where no input is selected
+        '''
+        if self.mute_enabled:
+            self._set_gpio(42, 84)
+        else:
+            self._set_gpio(106, 84)
+
     def select_input(self, input):
         '''
         Selects a specific input
@@ -74,29 +91,23 @@ class InputSelector(object):
                 return
 
         if input == 1:
-            self._set_gio(0, 2)
-            time.sleep(0.01)
-            self._set_gio(0, 4)
+            self._set_gpio(106, 82)
+            self._disable_all_relays()
         elif input == 2:
-            self._set_gio(0, 8)
-            time.sleep(0.01)
-            self._set_gio(0, 16)
+            self._set_gpio(106, 76)
+            self._disable_all_relays()
         elif input == 3:
-            self._set_gio(0, 32)
-            time.sleep(0.01)
-            self._set_gio(0, 64)
+            self._set_gpio(106, 52)
+            self._disable_all_relays()
         elif input == 4:
-            self._set_gio(1, 0)
-            time.sleep(0.01)
-            self._set_gio(2, 0)
+            self._set_gpio(105, 84)
+            self._disable_all_relays()
         elif input == 5:
-            self._set_gio(4, 0)
-            time.sleep(0.01)
-            self._set_gio(8, 0)
+            self._set_gpio(102, 84)
+            self._disable_all_relays()
         elif input == 6:
-            self._set_gio(16, 0)
-            time.sleep(0.01)
-            self._set_gio(32, 0)
+            self._set_gpio(90, 84)
+            self._disable_all_relays()
 
         print('input-selector input {0} selected'.format(input))
         self.input_current = input
