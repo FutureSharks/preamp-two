@@ -14,8 +14,8 @@ class MdacAttenuator(object):
         self.db_level = db_level
         self.debug = debug
         self._device = spi_device.SPIDevice(spi, cs, baudrate=baudrate, polarity=0, phase=0)
-
-        print('mdac-attenuator starting init')
+        print('mdac-attenuator initialising with level {0}'.format(self.level))
+        self._write_level(self.level)
 
     def _write_level(self, level):
         '''
@@ -31,6 +31,12 @@ class MdacAttenuator(object):
             device.write(bytearray([low_byte]))
             self.level = level
             print('mdac-attenuator level {0}'.format(level))
+
+    def increase_level(self, increment=500):
+        self._write_level(self.level + increment)
+
+    def decrease_level(self, increment=500):
+        self._write_level(self.level - increment)
 
     def set_db_level(self, db_level):
         '''
