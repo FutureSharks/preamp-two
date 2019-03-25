@@ -81,9 +81,11 @@ class EncoderPanel(object):
         '''
         self.encoder_position = self.encoder.position
 
-        if self.encoder_position > (self.encoder_last_position + self.increment_before_change):
-            change_object.up()
-        elif self.encoder_position < (self.encoder_last_position - self.increment_before_change):
-            change_object.down()
+        if self.encoder_position > (self.encoder_last_change + self.increment_before_change):
+            self.change_object.up()
+            self.encoder_last_change = self.encoder_position
+        elif self.encoder_position < (self.encoder_last_change - self.increment_before_change):
+            self.change_object.down()
+            self.encoder_last_change = self.encoder_position
 
         self.encoder_last_position = self.encoder_position

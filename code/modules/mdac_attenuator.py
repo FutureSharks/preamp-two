@@ -38,7 +38,7 @@ class MdacAttenuator(object):
         Fades from 0 to init_level
         '''
         while self.level < self.init_level:
-            self._write_level(self.level + 1)
+            self._write_level(self.level + 20)
 
     def increase_level(self, increment=500):
         self._write_level(self.level + increment)

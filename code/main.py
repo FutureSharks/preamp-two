@@ -26,7 +26,7 @@ input_control = EncoderPanel(
     pixel_pin=board.D12,
     encoder_pin_a=board.D10,
     encoder_pin_b=board.D11,
-    increment_before_change=21,
+    increment_before_change=18,
     change_object=selector,
 )
 
