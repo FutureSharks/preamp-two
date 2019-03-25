@@ -117,3 +117,9 @@ class InputSelector(object):
         Selects the next input
         '''
         self.select_input(input=self.input_current + increment)
+
+    def up(self):
+        self.next_input(1)
+
+    def down(self):
+        self.next_input(-1)

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import neopixel
-import rotaryio
+from rotaryio import IncrementalEncoder
 import time
 
 
@@ -9,7 +9,9 @@ class EncoderPanel(object):
     '''
     Represents a EN1J encoder surrounded by a ring of 16 RGBW NeoPixels
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, increment_before_change=1):
+        self.change_object = change_object
+        self.increment_before_change = increment_before_change
         self.ring_num_neopixels = 16
         self.ring_offset = -3
         self.ring_resolution = 16
@@ -22,7 +24,7 @@ class EncoderPanel(object):
         self.encoder_resolution = 128
         self.encoder_last_position = 0
         self.encoder_position = 0
-        self.encoder = rotaryio.IncrementalEncoder(encoder_pin_a, encoder_pin_b)
+        self.encoder = IncrementalEncoder(encoder_pin_a, encoder_pin_b)
         self.intro_animation()
 
     def _calculate_ring_offset(self, pixel):
@@ -75,19 +77,13 @@ class EncoderPanel(object):
 
     def read_encoder(self):
         '''
-        Reads and reports the position of the encoder
+        Reads the position of the encoder
         '''
-        while True:
-            self.encoder_position = self.encoder.position
+        self.encoder_position = self.encoder.position
 
-            if self.encoder_position >= self.encoder_resolution:
-                self.encoder.position = self.encoder_resolution - 1
-                self.encoder_position = self.encoder_resolution - 1
-            elif self.encoder_position <= 0:
-                self.encoder.position = 0
-                self.encoder_position = 0
+        if self.encoder_position > (self.encoder_last_position + self.increment_before_change):
+            change_object.up()
+        elif self.encoder_position < (self.encoder_last_position - self.increment_before_change):
+            change_object.down()
 
-            self.ring.fill((self.encoder_position, 0, 0, 0))
-            p = self.set_ring_point(self.encoder_position)
-            self.ring[self._calculate_ring_offset(p)] = (0, 0, 255, 0)
-            self.encoder_last_position = self.encoder_position
+        self.encoder_last_position = self.encoder_position
