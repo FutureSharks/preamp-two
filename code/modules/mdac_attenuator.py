@@ -9,10 +9,8 @@ class MdacAttenuator(object):
     '''
     Manages an MDAC attenuator via SPI
     '''
-    def __init__(self, spi, cs, baudrate=1000000, debug=False, init_level=5000, db_level=0):
+    def __init__(self, spi, cs, baudrate=1000000, debug=False):
         self.level = 0
-        self.init_level = init_level
-        self.db_level = db_level
         self.debug = debug
         self._device = spi_device.SPIDevice(spi, cs, baudrate=baudrate, polarity=0, phase=0)
         print('mdac-attenuator initialising with level {0}'.format(self.level))
@@ -33,24 +31,11 @@ class MdacAttenuator(object):
             self.level = level
             print('mdac-attenuator level {0}'.format(level))
 
-    def fade_in(self):
-        '''
-        Fades from 0 to init_level
-        '''
-        while self.level < self.init_level:
-            self._write_level(self.level + 20)
-
     def increase_level(self, increment=500):
         self._write_level(self.level + increment)
 
     def decrease_level(self, increment=500):
         self._write_level(self.level - increment)
-
-    def set_db_level(self, db_level):
-        '''
-        Sets the MDAC volume to a specific Db level
-        '''
-        pass
 
     def up(self):
         self.increase_level()

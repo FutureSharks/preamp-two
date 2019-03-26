@@ -27,6 +27,16 @@ class EncoderPanel(object):
         self.encoder = IncrementalEncoder(encoder_pin_a, encoder_pin_b)
         self.intro_animation()
 
+    def write_ring(self, led_values):
+        '''
+        Writes a list of values to the NeoPixel ring
+        '''
+        if len(led_values) > self.ring_num_neopixels:
+            print('length of led_values can\'t be higher than ring_num_neopixels')
+            return
+        for index, value in enumerate(led_values):
+            self.ring[index] = value
+
     def _calculate_ring_offset(self, pixel):
         '''
         Calculates offset between the top and first NeoPixels
