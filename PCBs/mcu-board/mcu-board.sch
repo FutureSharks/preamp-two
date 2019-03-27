@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:mcu-board-cache
-EELAYER 26 0
+EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -23,7 +23,7 @@ F 1 "ENCODER-PANEL-2" V 5875 1312 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 6000 1600 50  0001 C CNN
 F 3 "~" H 6000 1600 50  0001 C CNN
 	1    6000 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x05 ENCODER-PANEL-1
@@ -34,7 +34,7 @@ F 1 "ENCODER-PANEL-1" V 4525 1312 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 4650 1600 50  0001 C CNN
 F 3 "~" H 4650 1600 50  0001 C CNN
 	1    4650 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x06 J5
@@ -45,7 +45,7 @@ F 1 "MDAC-INPUT-SELECTOR" V 9064 1880 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-06A_1x06_P2.54mm_Vertical" H 9100 1600 50  0001 C CNN
 F 3 "~" H 9100 1600 50  0001 C CNN
 	1    9100 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 5V1
@@ -56,7 +56,7 @@ F 1 "5V" H 7229 1501 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7150 1600 50  0001 C CNN
 F 3 "~" H 7150 1600 50  0001 C CNN
 	1    7150 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 3.3V1
@@ -67,18 +67,7 @@ F 1 "3.3V" H 7779 1501 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 7700 1600 50  0001 C CNN
 F 3 "~" H 7700 1600 50  0001 C CNN
 	1    7700 1600
-	0    -1   -1   0
-$EndComp
-$Comp
-L adafruit-itsybitsy:m0-express U1
-U 1 1 5C26DA4B
-P 5900 4400
-F 0 "U1" H 5900 5225 50  0000 C CNN
-F 1 "m0-express" H 5900 5134 50  0000 C CNN
-F 2 "m0-express:m0-express" H 5950 4400 50  0001 C CNN
-F 3 "" H 5950 4400 50  0001 C CNN
-	1    5900 4400
-	1    0    0    -1
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0101
@@ -89,7 +78,7 @@ F 1 "GND" H 7155 2027 50  0000 C CNN
 F 2 "" H 7150 2200 50  0001 C CNN
 F 3 "" H 7150 2200 50  0001 C CNN
 	1    7150 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0102
@@ -100,7 +89,7 @@ F 1 "GND" H 7705 2027 50  0000 C CNN
 F 2 "" H 7700 2200 50  0001 C CNN
 F 3 "" H 7700 2200 50  0001 C CNN
 	1    7700 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0103
@@ -111,7 +100,7 @@ F 1 "GND" H 5805 1927 50  0000 C CNN
 F 2 "" H 5800 2100 50  0001 C CNN
 F 3 "" H 5800 2100 50  0001 C CNN
 	1    5800 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0104
@@ -122,7 +111,7 @@ F 1 "GND" H 4455 1977 50  0000 C CNN
 F 2 "" H 4450 2150 50  0001 C CNN
 F 3 "" H 4450 2150 50  0001 C CNN
 	1    4450 2150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0105
@@ -133,7 +122,7 @@ F 1 "+3V3" H 7815 2073 50  0000 C CNN
 F 2 "" H 7800 1900 50  0001 C CNN
 F 3 "" H 7800 1900 50  0001 C CNN
 	1    7800 1900
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0106
@@ -144,7 +133,7 @@ F 1 "+5V" H 7265 2073 50  0000 C CNN
 F 2 "" H 7250 1900 50  0001 C CNN
 F 3 "" H 7250 1900 50  0001 C CNN
 	1    7250 1900
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	7150 1800 7150 2200
@@ -163,7 +152,7 @@ F 1 "GND" H 8905 1677 50  0000 C CNN
 F 2 "" H 8900 1850 50  0001 C CNN
 F 3 "" H 8900 1850 50  0001 C CNN
 	1    8900 1850
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0108
@@ -174,7 +163,7 @@ F 1 "+3V3" H 9015 2273 50  0000 C CNN
 F 2 "" H 9000 2100 50  0001 C CNN
 F 3 "" H 9000 2100 50  0001 C CNN
 	1    9000 2100
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8900 1800 8900 1850
@@ -189,7 +178,7 @@ F 1 "+5V" H 5915 2023 50  0000 C CNN
 F 2 "" H 5900 1850 50  0001 C CNN
 F 3 "" H 5900 1850 50  0001 C CNN
 	1    5900 1850
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+5V #PWR0110
@@ -200,7 +189,7 @@ F 1 "+5V" H 4565 2023 50  0000 C CNN
 F 2 "" H 4550 1850 50  0001 C CNN
 F 3 "" H 4550 1850 50  0001 C CNN
 	1    4550 1850
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	4550 1800 4550 1850
@@ -219,7 +208,7 @@ F 1 "V-BAT" H 8329 1501 50  0000 L CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 8250 1600 50  0001 C CNN
 F 3 "~" H 8250 1600 50  0001 C CNN
 	1    8250 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0111
@@ -230,7 +219,7 @@ F 1 "GND" H 8255 2027 50  0000 C CNN
 F 2 "" H 8250 2200 50  0001 C CNN
 F 3 "" H 8250 2200 50  0001 C CNN
 	1    8250 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	8250 1800 8250 2200
@@ -247,7 +236,7 @@ F 1 "+3V3" H 5215 3773 50  0000 C CNN
 F 2 "" H 5200 3600 50  0001 C CNN
 F 3 "" H 5200 3600 50  0001 C CNN
 	1    5200 3600
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6350 4000 6650 4000
@@ -262,7 +251,7 @@ F 1 "GND" H 6855 3727 50  0000 C CNN
 F 2 "" H 6850 3900 50  0001 C CNN
 F 3 "" H 6850 3900 50  0001 C CNN
 	1    6850 3900
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:+5V #PWR0114
@@ -273,7 +262,7 @@ F 1 "+5V" H 6665 4173 50  0000 C CNN
 F 2 "" H 6650 4000 50  0001 C CNN
 F 3 "" H 6650 4000 50  0001 C CNN
 	1    6650 4000
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	5450 4800 5050 4800
@@ -316,7 +305,7 @@ F 1 "SN74AHCT125DR" V 3303 3928 60  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 3250 3350 60  0001 C CNN
 F 3 "" H 3250 3350 60  0000 C CNN
 	1    3250 3500
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	3050 2650 3050 2350
@@ -326,9 +315,9 @@ Text GLabel 3450 2350 1    50   Input ~ 0
 panel_1_neopixel_3v
 Text GLabel 3150 2350 1    50   Input ~ 0
 panel_2_neopixel_3v
-Text GLabel 6600 4500 2    50   Input ~ 0
+Text GLabel 6600 4400 2    50   Input ~ 0
 panel_1_neopixel_3v
-Text GLabel 6600 4200 2    50   Input ~ 0
+Text GLabel 6600 4100 2    50   Input ~ 0
 panel_2_neopixel_3v
 Text GLabel 3050 2350 1    50   Input ~ 0
 panel_2_neopixel_5v
@@ -354,7 +343,7 @@ F 1 "GND" H 2805 2527 50  0000 C CNN
 F 2 "" H 2800 2700 50  0001 C CNN
 F 3 "" H 2800 2700 50  0001 C CNN
 	1    2800 2700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3150 4350 3150 4450
@@ -377,7 +366,7 @@ F 1 "+5V" H 3565 4773 50  0000 C CNN
 F 2 "" H 3550 4600 50  0001 C CNN
 F 3 "" H 3550 4600 50  0001 C CNN
 	1    3550 4600
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L SN74AHCT125:SN74AHCT125 U2
@@ -388,7 +377,7 @@ F 1 "SN74AHCT125DR" V 1653 3928 60  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 1600 3350 60  0001 C CNN
 F 3 "" H 1600 3350 60  0000 C CNN
 	1    1600 3500
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	1900 2650 1900 2550
@@ -421,7 +410,7 @@ F 1 "GND" H 1105 4377 50  0000 C CNN
 F 2 "" H 1100 4550 50  0001 C CNN
 F 3 "" H 1100 4550 50  0001 C CNN
 	1    1100 4550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0118
@@ -432,7 +421,7 @@ F 1 "GND" H 1155 2527 50  0000 C CNN
 F 2 "" H 1150 2700 50  0001 C CNN
 F 3 "" H 1150 2700 50  0001 C CNN
 	1    1150 2700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text GLabel 1500 2350 1    50   Input ~ 0
 panel_2_encoder_B_5v
@@ -446,9 +435,9 @@ Text GLabel 1400 2350 1    50   Input ~ 0
 panel_2_encoder_B_3v
 Text GLabel 1700 2350 1    50   Input ~ 0
 panel_2_encoder_A_3v
-Text GLabel 6600 4400 2    50   Input ~ 0
-panel_2_encoder_A_3v
 Text GLabel 6600 4300 2    50   Input ~ 0
+panel_2_encoder_A_3v
+Text GLabel 6600 4200 2    50   Input ~ 0
 panel_2_encoder_B_3v
 Text GLabel 1300 4600 3    50   Input ~ 0
 panel_1_encoder_B_3v
@@ -462,9 +451,9 @@ Wire Wire Line
 	1700 4350 1700 4600
 Wire Wire Line
 	1400 4600 1400 4350
-Text GLabel 6600 4700 2    50   Input ~ 0
-panel_1_encoder_A_3v
 Text GLabel 6600 4600 2    50   Input ~ 0
+panel_1_encoder_A_3v
+Text GLabel 6600 4500 2    50   Input ~ 0
 panel_1_encoder_B_3v
 $Comp
 L power:+3V3 #PWR0119
@@ -475,7 +464,7 @@ F 1 "+3V3" H 1915 4723 50  0000 C CNN
 F 2 "" H 1900 4550 50  0001 C CNN
 F 3 "" H 1900 4550 50  0001 C CNN
 	1    1900 4550
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L Device:LED LED_3V1
@@ -486,7 +475,7 @@ F 1 "LED" H 8841 4125 50  0000 C CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8850 4000 50  0001 C CNN
 F 3 "~" H 8850 4000 50  0001 C CNN
 	1    8850 4000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED LED_5V1
@@ -497,7 +486,7 @@ F 1 "LED" H 8841 4575 50  0000 C CNN
 F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 8850 4450 50  0001 C CNN
 F 3 "~" H 8850 4450 50  0001 C CNN
 	1    8850 4450
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0120
@@ -508,7 +497,7 @@ F 1 "GND" H 8505 4577 50  0000 C CNN
 F 2 "" H 8500 4750 50  0001 C CNN
 F 3 "" H 8500 4750 50  0001 C CNN
 	1    8500 4750
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0121
@@ -519,7 +508,7 @@ F 1 "+3V3" H 9665 4073 50  0000 C CNN
 F 2 "" H 9650 3900 50  0001 C CNN
 F 3 "" H 9650 3900 50  0001 C CNN
 	1    9650 3900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0122
@@ -530,7 +519,7 @@ F 1 "+5V" H 9665 4523 50  0000 C CNN
 F 2 "" H 9650 4350 50  0001 C CNN
 F 3 "" H 9650 4350 50  0001 C CNN
 	1    9650 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R RLED1
@@ -541,7 +530,7 @@ F 1 "R" V 9134 4000 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9180 4000 50  0001 C CNN
 F 3 "~" H 9250 4000 50  0001 C CNN
 	1    9250 4000
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R RLED2
@@ -552,7 +541,7 @@ F 1 "R" V 9134 4450 50  0000 C CNN
 F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 9180 4450 50  0001 C CNN
 F 3 "~" H 9250 4450 50  0001 C CNN
 	1    9250 4450
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	9400 4450 9650 4450
@@ -599,8 +588,6 @@ Wire Wire Line
 	6350 4500 6600 4500
 Wire Wire Line
 	6350 4600 6600 4600
-Wire Wire Line
-	6350 4700 6600 4700
 Text GLabel 6000 2050 3    50   Input ~ 0
 panel_2_neopixel_5v
 Text GLabel 4650 2050 3    50   Input ~ 0
@@ -634,7 +621,7 @@ F 1 "MountingHole_Pad" H 3700 5960 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3600 6000 50  0001 C CNN
 F 3 "~" H 3600 6000 50  0001 C CNN
 	1    3600 6000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
@@ -645,7 +632,7 @@ F 1 "MountingHole_Pad" H 3900 5960 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3800 6000 50  0001 C CNN
 F 3 "~" H 3800 6000 50  0001 C CNN
 	1    3800 6000
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
@@ -656,7 +643,7 @@ F 1 "MountingHole_Pad" H 3700 6260 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3600 6300 50  0001 C CNN
 F 3 "~" H 3600 6300 50  0001 C CNN
 	1    3600 6300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
@@ -667,7 +654,7 @@ F 1 "MountingHole_Pad" H 3900 6260 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3_Pad" H 3800 6300 50  0001 C CNN
 F 3 "~" H 3800 6300 50  0001 C CNN
 	1    3800 6300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 IR1
@@ -678,7 +665,7 @@ F 1 "Conn_01x03" V 9675 1412 50  0000 R CNN
 F 2 "Connector_Molex:Molex_KK-254_AE-6410-03A_1x03_P2.54mm_Vertical" H 9800 1600 50  0001 C CNN
 F 3 "~" H 9800 1600 50  0001 C CNN
 	1    9800 1600
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR0123
@@ -689,7 +676,7 @@ F 1 "GND" H 9705 2027 50  0000 C CNN
 F 2 "" H 9700 2200 50  0001 C CNN
 F 3 "" H 9700 2200 50  0001 C CNN
 	1    9700 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3V3 #PWR0124
@@ -700,7 +687,7 @@ F 1 "+3V3" H 9815 2073 50  0000 C CNN
 F 2 "" H 9800 1900 50  0001 C CNN
 F 3 "" H 9800 1900 50  0001 C CNN
 	1    9800 1900
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	9700 1800 9700 2200
@@ -710,7 +697,7 @@ Wire Wire Line
 	9900 1800 9900 2450
 Text GLabel 9900 2450 3    50   Input ~ 0
 IR_SENSOR
-Text GLabel 6600 4100 2    50   Input ~ 0
+Text GLabel 5050 4200 0    50   Input ~ 0
 IR_SENSOR
 Wire Wire Line
 	6350 4100 6600 4100
@@ -723,7 +710,7 @@ F 1 "C" H 2315 4155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 2238 4050 50  0001 C CNN
 F 3 "~" H 2200 4200 50  0001 C CNN
 	1    2200 4200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C2
@@ -734,7 +721,7 @@ F 1 "C" H 3965 4155 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 3888 4050 50  0001 C CNN
 F 3 "~" H 3850 4200 50  0001 C CNN
 	1    3850 4200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3550 4450 3850 4450
@@ -759,7 +746,7 @@ F 1 "GND" H 2205 3777 50  0000 C CNN
 F 2 "" H 2200 3950 50  0001 C CNN
 F 3 "" H 2200 3950 50  0001 C CNN
 	1    2200 3950
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0126
@@ -770,7 +757,7 @@ F 1 "GND" H 3855 3777 50  0000 C CNN
 F 2 "" H 3850 3950 50  0001 C CNN
 F 3 "" H 3850 3950 50  0001 C CNN
 	1    3850 3950
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	1400 2650 1400 2350
@@ -802,7 +789,7 @@ F 1 "Logo_Open_Hardware_Small" H 1000 7125 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 1000 7350 50  0001 C CNN
 F 3 "~" H 1000 7350 50  0001 C CNN
 	1    1000 7350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Graphic:Logo_Open_Hardware_Small LOGO2
@@ -813,6 +800,40 @@ F 1 "Logo_Open_Hardware_Small" H 1550 7125 50  0001 C CNN
 F 2 "Symbol:OSHW-Logo2_14.6x12mm_SilkScreen" H 1550 7350 50  0001 C CNN
 F 3 "~" H 1550 7350 50  0001 C CNN
 	1    1550 7350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
+$Comp
+L adafruit-itsybitsy:m0-express U1
+U 1 1 5C9D0D99
+P 5900 4400
+F 0 "U1" H 5900 5225 50  0000 C CNN
+F 1 "m0-express" H 5900 5134 50  0000 C CNN
+F 2 "m0-express:m0-express" H 5950 4400 50  0001 C CNN
+F 3 "" H 5950 4400 50  0001 C CNN
+	1    5900 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 4200 5450 4200
+NoConn ~ 3350 4350
+NoConn ~ 3250 4350
+NoConn ~ 3050 4350
+NoConn ~ 2950 4350
+NoConn ~ 5450 4500
+NoConn ~ 5450 4400
+NoConn ~ 5450 4300
+NoConn ~ 5450 4100
+NoConn ~ 5450 4000
+NoConn ~ 5450 3800
+NoConn ~ 6350 4700
+NoConn ~ 6350 4800
+NoConn ~ 6350 4900
+NoConn ~ 6350 5000
+NoConn ~ 6350 5100
+NoConn ~ 5450 5100
+NoConn ~ 5450 5000
+NoConn ~ 3600 6100
+NoConn ~ 3800 6100
+NoConn ~ 3800 6400
+NoConn ~ 3600 6400
 $EndSCHEMATC
