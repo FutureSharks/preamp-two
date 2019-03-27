@@ -34,8 +34,10 @@ class EncoderPanel(object):
         if len(led_values) > self.ring_num_neopixels:
             print('length of led_values can\'t be higher than ring_num_neopixels')
             return
+
         for index, value in enumerate(led_values):
             self.ring[index] = value
+            self.ring.show()
 
     def _calculate_ring_offset(self, pixel):
         '''
