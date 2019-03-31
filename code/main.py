@@ -5,6 +5,9 @@ import time
 from modules import MdacAttenuator, InputSelector, EncoderPanel, calculate_volume_ring, calculate_input_ring
 
 
+volume_fade_in_done = False
+debug_mode = True
+
 cs_input_selector = digitalio.DigitalInOut(board.A4)
 cs_mdac = digitalio.DigitalInOut(board.A5)
 spi = busio.SPI(board.SCK, MOSI=board.MOSI)
@@ -24,12 +27,10 @@ input_control = EncoderPanel(
     pixel_pin=board.D12,
     encoder_pin_a=board.D10,
     encoder_pin_b=board.D11,
-    increment_before_change=18,
+    increment_before_change=8,
     change_object=selector,
 )
 
-
-volume_fade_in_done = False
 
 while True:
     # if not volume_fade_in_done:
