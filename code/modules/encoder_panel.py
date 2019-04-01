@@ -18,7 +18,6 @@ class EncoderPanel(object):
         self.ring = neopixel.NeoPixel(
             pin=pixel_pin,
             n=self.ring_num_neopixels,
-            brightness=0.2,
             pixel_order=(1, 0, 2, 3)
         )
         self.encoder_resolution = 128
@@ -42,7 +41,7 @@ class EncoderPanel(object):
         else:
             for index, value in enumerate(led_values):
                 self.ring[index] = value
-                self.ring.show()
+            self.ring.show()
 
     def _calculate_ring_offset(self, pixel):
         '''
