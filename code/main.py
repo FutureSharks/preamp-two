@@ -16,17 +16,17 @@ selector = InputSelector(spi, cs_input_selector)
 
 
 volume_control = EncoderPanel(
-    pixel_pin=board.D9,
-    encoder_pin_a=board.D5,
-    encoder_pin_b=board.D7,
+    pixel_pin=board.D12,
+    encoder_pin_a=board.D10,
+    encoder_pin_b=board.D11,
     increment_before_change=1,
     change_object=attenuator,
 )
 
 input_control = EncoderPanel(
-    pixel_pin=board.D12,
-    encoder_pin_a=board.D10,
-    encoder_pin_b=board.D11,
+    pixel_pin=board.D9,
+    encoder_pin_a=board.D5,
+    encoder_pin_b=board.D7,
     increment_before_change=8,
     change_object=selector,
 )
