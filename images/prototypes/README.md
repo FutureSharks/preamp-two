@@ -31,3 +31,7 @@ I made quite a few test module and prototypes before settling on the current des
 ![prototype](prototype-13.jpg)
 
 ![prototype](prototype-14.jpg)
+
+![prototype](prototype-16.jpg)
+
+![prototype](prototype-17.jpg)

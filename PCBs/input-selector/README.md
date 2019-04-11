@@ -12,6 +12,12 @@
 
 ### Photos
 
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_1.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_2.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_3.png" width="600">
+
 <img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_3d.png" width="600">
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code

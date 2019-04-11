@@ -26,6 +26,12 @@ Here is the DIYAudio forum thread with my prototypes and questions: [Solid state
 
 ### Photos
 
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_1.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_2.png" width="600">
+
 <img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3d.png" width="600">
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
