@@ -2,6 +2,8 @@
 
 <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
 
+![complete](images/complete_1.jpg)
+
 Here is my project to build a Hi-Fi preamplifier. This repository includes schematics, PCB layouts, CircuitPython code, BoMs, measurements and photos.
 
 Features:
@@ -11,6 +13,12 @@ Features:
 * Completely digitally Controlled
 * Modular design
 * All open source
+
+![complete](images/complete_2.jpg)
+
+![complete](images/complete_3.jpg)
+
+![complete](images/complete_4.jpg)
 
 ### Components
 

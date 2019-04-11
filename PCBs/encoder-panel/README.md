@@ -11,7 +11,11 @@ The module is the sole human interface to the preamp. It consists of 2 things:
 
 ### Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_3d.png" width="600">
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_1.jpg" width="900">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_2.jpg" width="900">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_3d.png" width="900">
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
