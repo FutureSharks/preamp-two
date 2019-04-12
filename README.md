@@ -43,3 +43,5 @@ The PCBs and schematics were created in [KiCad](http://kicad-pcb.org/) and the c
 <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
 
 See here: [images/prototypes](images/prototypes)
+
+PCBs made by [OSH Park](https://oshpark.com/).
