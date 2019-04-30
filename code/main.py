@@ -32,11 +32,7 @@ input_control = EncoderPanel(
     change_object=selector,
 )
 
-volume_led_values = calculate_volume_ring(
-    levels=attenuator.level_max + 1,
-    num_pixels=16,
-    pxl_max_value=32
-)
+l = 0
 
 while True:
     # if not volume_fade_in_done:
@@ -48,7 +44,11 @@ while True:
     #         volume_control.write_ring(calculate_volume_ring(attenuator.level))
 
     volume_control.read_encoder()
-    volume_control.update_led_ring(volume_led_values[attenuator.level])
+
+    if l != attenuator.level:
+        volume_control.update_led_ring(calculate_volume_ring(attenuator.level))
+
+    l = attenuator.level
     #
     # input_control.read_encoder()
     # input_control.update_led_ring(calculate_input_ring(selector.input_current))

@@ -31,17 +31,15 @@ class EncoderPanel(object):
         '''
         Writes a list of values to the NeoPixel ring
         '''
-        if len(led_values) > self.ring_num_neopixels:
-            print('length of led_values can\'t be higher than ring_num_neopixels')
+        pixel_number = led_values[0]
+        pixel_value = led_values[1]
+
+        if pixel_number > self.ring_num_neopixels:
+            print('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
             return
 
-        if len(led_values) == 1:
-            self.ring.fill(led_values[0])
-
-        else:
-            for index, value in enumerate(led_values):
-                self.ring[index] = value
-            self.ring.show()
+        self.ring[pixel_number - 1] = pixel_value
+        self.ring.show()
 
     def _calculate_ring_offset(self, pixel):
         '''
