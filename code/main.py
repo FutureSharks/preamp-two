@@ -28,27 +28,20 @@ input_control = EncoderPanel(
     pixel_pin=board.D13,
     encoder_pin_a=board.D11,
     encoder_pin_b=board.D12,
-    increment_before_change=8,
+    increment_before_change=26,
     change_object=selector,
 )
 
-l = 0
+previous_level = 0
+previous_input = 1
 
 while True:
-    # if not volume_fade_in_done:
-    #     while True:
-    #         if attenuator.level > 5000:
-    #             volume_fade_in_done = True
-    #             break
-    #         attenuator.up()
-    #         volume_control.write_ring(calculate_volume_ring(attenuator.level))
-
     volume_control.read_encoder()
+    if previous_level != attenuator.level:
+        volume_control.write_single_pixel(*calculate_volume_ring(attenuator.level))
+    previous_level = attenuator.level
 
-    if l != attenuator.level:
-        volume_control.update_led_ring(calculate_volume_ring(attenuator.level))
-
-    l = attenuator.level
-    #
-    # input_control.read_encoder()
-    # input_control.update_led_ring(calculate_input_ring(selector.input_current))
+    input_control.read_encoder()
+    if previous_input != selector.input_current:
+        input_control.fill_pixel_ring(calculate_input_ring(selector.input_current))
+    previous_input = selector.input_current
