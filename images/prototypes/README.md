@@ -40,4 +40,4 @@ I made quite a few test module and prototypes before settling on the current des
 
 ![prototype](prototype-17.jpg)
 
-![prototype](prototype-18.jpg)
+![prototype](prototype-19.jpg)
