@@ -65,6 +65,7 @@ class EncoderPanel(object):
             n_1 = self._calculate_ring_offset(min(pxl + 1, self.ring_num_neopixels - 1))
             self.ring[n] = (0, 0, 255, 0)
             self.ring[n_1] = (255, 0, 0, 0)
+            time.sleep(0.02)
 
         self.ring.fill((0, 0, 0, 0))
 
