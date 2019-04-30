@@ -14,11 +14,15 @@ Features:
 * Modular design
 * All open source
 
+![prototype](images/prototypes/prototype-16.gif)
+
 ![complete](images/complete_2.jpg)
 
 ![complete](images/complete_3.jpg)
 
 ![complete](images/complete_4.jpg)
+
+![prototype](images/diagram.png)
 
 ### Components
 
