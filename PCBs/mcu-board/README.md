@@ -6,7 +6,16 @@ The PCB holds the [Adafruit ItsyBitsy M0 Express](https://learn.adafruit.com/int
 
 ### Photos
 
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_1.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_2.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_3.png" width="600">
+
+<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_5.png" width="600">
+
 <img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_3d.png" width="600">
+
 
 ### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
