@@ -19,14 +19,23 @@ class MdacAttenuator(object):
         self._device = spi_device.SPIDevice(spi, cs, baudrate=baudrate, polarity=0, phase=0)
         self._write_dac_value(0)
         self._calculate_levels()
-        print('mdac-attenuator initialed with {0} levels'.format(len(self.levels)))
+        self._print('initialed with {0} levels'.format(len(self.levels)))
+
+    def _print(self, message):
+        '''
+        Small function for printing information is debug option is enabled
+        '''
+        if not self.debug:
+            return
+        else:
+            print('mdac-attenuator: {0}'.format(message))
 
     def _write_dac_value(self, value):
         '''
         Sets the MDAC value
         '''
         if value < 0 or value >= 65536:
-            print('mdac-attenuator dac value must be between 0 and 65535. Given value {0}'.format(value))
+            self._print('dac value must be between 0 and 65535. Given value {0}'.format(value))
             return
         with self._device as device:
             high_byte, low_byte = divmod(value, 256)
@@ -34,8 +43,7 @@ class MdacAttenuator(object):
             device.write(bytearray([high_byte]))
             device.write(bytearray([low_byte]))
             self.dac_value = value
-            if self.debug:
-                print('mdac-attenuator DAC value set: {0}'.format(value))
+            self._print('DAC value set: {0}'.format(value))
 
     def _calculate_levels(self):
         '''
@@ -55,13 +63,11 @@ class MdacAttenuator(object):
         Sets an attenuation level
         '''
         if level > self.level_max or level < 0:
-            if self.debug:
-                print('mdac-attenuator level must be between 0 and {0}. Given level {1}'.format(self.level_max, level))
+            self._print('level must be between 0 and {0}. Given level {1}'.format(self.level_max, level))
             return
         self._write_dac_value(self.levels[level])
         self.level = level
-        if self.debug:
-            print('mdac-attenuator level set {0}'.format(self.level))
+        self._print('level set {0}'.format(self.level))
 
     def up(self):
         self.set_level(self.level + 1)
