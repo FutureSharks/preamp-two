@@ -9,7 +9,7 @@ class InputControl(object):
     '''
     Input control module: EN1J encoder surrounded by a ring of 16 RGBW NeoPixels
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, increment_before_change=1):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, increment_before_change=1, debug=True):
         self.change_object = change_object
         self.increment_before_change = increment_before_change
         self.ring_num_neopixels = 16
@@ -25,14 +25,25 @@ class InputControl(object):
         self.encoder_last_change = 0
         self.encoder_position = 0
         self.encoder = IncrementalEncoder(encoder_pin_a, encoder_pin_b)
+        self.last_change_time = time.time()
+        self.debug = debug
         self.intro_animation()
+
+    def _print(self, message):
+        '''
+        Small function for printing information is debug option is enabled
+        '''
+        if not self.debug:
+            return
+        else:
+            print('input-control: {0}'.format(message))
 
     def write_single_pixel(self, pixel_number, pixel_value):
         '''
         Writes to a single NeoPixel on the ring
         '''
         if pixel_number > self.ring_num_neopixels:
-            print('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
+            self._print('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
             return
 
         self.ring[pixel_number - 1] = pixel_value
@@ -94,22 +105,38 @@ class InputControl(object):
         y = round(x * self.ring_resolution)
         return y
 
+    def fade_ring(self):
+        '''
+        Fades ring to a low brightness
+        '''
+        self._print('fading')
+        self.ring.fill((1, 0, 1, 0))
+        return
+
+    def unfade_ring(self):
+        '''
+        Fades ring to a low brightness
+        '''
+        self._print('unfading')
+        self.fill_pixel_ring(self.calculate_input_ring(self.change_object.input_current))
+        return
+
     def calculate_input_ring(self, input):
         '''
         Returns the RGBW values for the ring of 16 NeoPixels on the input selector
         '''
         if input == 1:
-            return (16, 0, 0, 0)
+            return (16, 0, 0, 2)
         if input == 2:
-            return (0, 16, 0, 0)
+            return (16, 9, 0, 0)
         if input == 3:
-            return (0, 0, 16, 0)
+            return (0, 16, 16, 0)
         if input == 4:
-            return (0, 0, 0, 16)
+            return (0, 0, 16, 0)
         if input == 5:
-            return (8, 8, 0, 0)
+            return (9, 0, 16, 0)
         if input == 6:
-            return (0, 0, 8, 8)
+            return (0, 16, 0, 10)
 
     def read_encoder(self):
         '''
@@ -130,3 +157,4 @@ class InputControl(object):
             self.fill_pixel_ring(self.calculate_input_ring(self.change_object.input_current))
 
         self.encoder_last_position = self.encoder_position
+        self.last_change_time = time.time()

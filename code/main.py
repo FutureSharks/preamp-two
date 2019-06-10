@@ -4,7 +4,8 @@ import busio
 import time
 from modules import MdacAttenuator, InputSelector, VolumeControl, InputControl
 
-volume_fade_in_done = False
+rings_faded = False
+rings_fade_timeout = 3
 debug_mode = True
 
 ir_input = digitalio.DigitalInOut(board.A0)
@@ -31,6 +32,21 @@ input_control = InputControl(
     change_object=selector,
 )
 
+
+
 while True:
     volume_control.read_encoder()
     input_control.read_encoder()
+
+    now = time.time()
+
+    if (now - volume_control.last_change_time) > rings_fade_timeout and (now - input_control.last_change_time) > rings_fade_timeout:
+        if not rings_faded:
+            volume_control.fade_ring()
+            input_control.fade_ring()
+            rings_faded = True
+    else:
+        if rings_faded:
+            volume_control.unfade_ring()
+            input_control.unfade_ring()
+        rings_faded = False
