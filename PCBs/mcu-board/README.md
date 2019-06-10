@@ -2,7 +2,7 @@
 
 <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
 
-The PCB holds the [Adafruit ItsyBitsy M0 Express](https://learn.adafruit.com/introducing-itsy-bitsy-m0), connectors and level shifters. The MDAC attenuator, input selector, both encoder panels and power digital power supply all connect to this PCB.
+The PCB holds the [Adafruit ItsyBitsy M4 Express](https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4), connectors and level shifters. The MDAC attenuator, input selector, both encoder panels and power digital power supply all connect to this PCB.
 
 ### Photos
 
@@ -34,7 +34,7 @@ N/A
 
 | Reference        | Quantity | Value                    | Footprint                                                      |
 |------------------|----------|--------------------------|----------------------------------------------------------------|
-| U1               | 1        | m0-express               | Adafruit ItsyBitsy M0 Express                      |
+| U1               | 1        | m0-express               | Adafruit ItsyBitsy M4 Express                      |
 | U2, U3           | 2        | SN74AHCT125D             | Package_SO:SOIC-14_3.9x8.7mm_P1.27mm                           |
 | LED_3V1, LED_5V1 | 2        | LED                      | LED SMD 1206    |
 | RLED1, RLED2     | 2        | R                        | Resistor SMD 1206    |
