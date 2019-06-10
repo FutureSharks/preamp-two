@@ -25,8 +25,8 @@ class MdacAttenuator(object):
         '''
         Sets the MDAC value
         '''
-        if value < 0 or value > 65536:
-            print('mdac-attenuator dac value must be between 0 and 65536. Given value {0}'.format(value))
+        if value < 0 or value >= 65536:
+            print('mdac-attenuator dac value must be between 0 and 65535. Given value {0}'.format(value))
             return
         with self._device as device:
             high_byte, low_byte = divmod(value, 256)
@@ -45,7 +45,7 @@ class MdacAttenuator(object):
             self.levels.append(round((10**-(i/self.attenuation_slope)) * 65536))
 
         self.levels[0] = 0
-        self.levels[-1] = 65536
+        self.levels[-1] = 65535
         self.level_max = len(self.levels) - 1
         self.levels = list(set(self.levels))
         self.levels.sort()
@@ -55,7 +55,8 @@ class MdacAttenuator(object):
         Sets an attenuation level
         '''
         if level > self.level_max or level < 0:
-            print('mdac-attenuator level must be between 0 and {0}. Given level {1}'.format(self.level_max, level))
+            if self.debug:
+                print('mdac-attenuator level must be between 0 and {0}. Given level {1}'.format(self.level_max, level))
             return
         self._write_dac_value(self.levels[level])
         self.level = level
