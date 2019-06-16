@@ -13,8 +13,8 @@ class VolumeControl(object):
         self.change_object = change_object
         self.increment_before_change = 1
         self.ring_num_neopixels = 16
-        self.ring_offset = -3
-        self.ring_resolution = 16
+        self.ring_offset = 5
+        self.offset_ring_addesses = list(range(0, self.ring_num_neopixels))[self.ring_offset:] + list(range(0, self.ring_num_neopixels))[:self.ring_offset]
         self.ring = neopixel.NeoPixel(
             pin=pixel_pin,
             n=self.ring_num_neopixels,
@@ -47,7 +47,7 @@ class VolumeControl(object):
             _print('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
             return
 
-        self.ring[pixel_number - 1] = pixel_value
+        self.ring[self.offset_ring_addesses[pixel_number]] = pixel_value
         self.ring.show()
 
     def fill_pixel_ring(self, pixel_values):
@@ -57,26 +57,13 @@ class VolumeControl(object):
         self.ring.fill(pixel_values)
         self.ring.show()
 
-    def _calculate_ring_offset(self, pixel):
-        '''
-        Calculates offset between the top and first NeoPixels
-        '''
-        result = pixel + self.ring_offset
-
-        if result < 0:
-            result = self.ring_num_neopixels - abs(result)
-        if result > self.ring_num_neopixels - 1:
-            result = 0 + (result - self.ring_num_neopixels)
-
-        return result
-
     def intro_animation(self):
         '''
         Displays a short ring animation
         '''
         for pxl in range(self.ring_num_neopixels):
-            n = self._calculate_ring_offset(pxl)
-            n_1 = self._calculate_ring_offset(min(pxl + 1, self.ring_num_neopixels - 1))
+            n = self.offset_ring_addesses[pxl]
+            n_1 = self.offset_ring_addesses[min(pxl + 1, self.ring_num_neopixels - 1)]
             self.ring[n] = (0, 0, 255, 0)
             self.ring[n_1] = (255, 0, 0, 0)
             time.sleep(0.02)
@@ -98,14 +85,6 @@ class VolumeControl(object):
         self.ring.fill((0, 0, 0, 0))
         return
 
-    def set_ring_point(self, point):
-        '''
-        Sets a dot on the ring at point
-        '''
-        x = point / self.encoder_resolution
-        y = round(x * self.ring_resolution)
-        return y
-
     def fade_ring(self):
         '''
         Fades ring to a low brightness
@@ -120,7 +99,7 @@ class VolumeControl(object):
         '''
         self._print('unfading')
         self.ring.fill((0, 3, 3, 0))
-        pixel_val = self.calculate_volume_ring(self.change_object.level)
+        pixel_val = self._calculate_volume_ring(self.change_object.level)
         for pxl in range(pixel_val[0]):
             time.sleep(0.01)
             self.write_single_pixel(pxl, pixel_val[1])
