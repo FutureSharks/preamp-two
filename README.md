@@ -14,7 +14,7 @@ Features:
 * Modular design
 * All open source
 
-![prototype](images/prototypes/prototype-16.gif)
+![prototype](prototypes/prototype-16.gif)
 
 ![complete](images/complete_2.jpg)
 
