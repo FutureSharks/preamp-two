@@ -12,6 +12,8 @@ STL of front: [front.stl](front.stl)
 
 STL of rear: [rear.stl](rear.stl)
 
+STL of knob: [knob.stl](knob.stl)
+
 ## Photos
 
 ![](enclosure-1.png)
