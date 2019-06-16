@@ -9,9 +9,9 @@ class InputControl(object):
     '''
     Input control module: EN1J encoder surrounded by a ring of 16 RGBW NeoPixels
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, increment_before_change=1, debug=True):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, debug=True, fade_colour=(1, 0, 1, 0)):
         self.change_object = change_object
-        self.increment_before_change = increment_before_change
+        self.increment_before_change = 26
         self.ring_num_neopixels = 16
         self.ring_offset = -3
         self.ring_resolution = 16
@@ -24,6 +24,7 @@ class InputControl(object):
         self.encoder_last_position = 0
         self.encoder_last_change = 0
         self.encoder_position = 0
+        self.fade_colour = fade_colour
         self.encoder = IncrementalEncoder(encoder_pin_a, encoder_pin_b)
         self.last_change_time = time.time()
         self.debug = debug
@@ -49,11 +50,11 @@ class InputControl(object):
         self.ring[pixel_number - 1] = pixel_value
         self.ring.show()
 
-    def fill_pixel_ring(self, pixel_value):
+    def fill_pixel_ring(self, pixel_values):
         '''
         Fills the ring with a single value
         '''
-        self.ring.fill(pixel_value)
+        self.ring.fill(pixel_values)
         self.ring.show()
 
     def _calculate_ring_offset(self, pixel):
@@ -110,7 +111,7 @@ class InputControl(object):
         Fades ring to a low brightness
         '''
         self._print('fading')
-        self.ring.fill((1, 0, 1, 0))
+        self.ring.fill(self.fade_colour)
         return
 
     def unfade_ring(self):
