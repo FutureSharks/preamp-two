@@ -6,7 +6,7 @@ The enclosure is based around 2060 extrusion profile. You can buy it at many pla
 
 ## CAD files
 
-Fusion 360 archive file: [preamp-two-enclosure.f3d](preamp-two-enclosure.f3d)
+Fusion 360 archive file: [preamp-two-enclosure.f3d](https://github.com/FutureSharks/preamp-two/raw/master/enclosure/preamp-two-enclosure.f3d)
 
 STL of front: [front.stl](front.stl)
 
@@ -16,9 +16,7 @@ STL of knob: [knob.stl](knob.stl)
 
 ## Photos
 
-![](enclosure-1.png)
-
-![](enclosure-2.png)
+![](enclosure-11.png)
 
 ![](enclosure-3.png)
 
@@ -32,12 +30,6 @@ STL of knob: [knob.stl](knob.stl)
 
 ![](enclosure-8.png)
 
-![](enclosure-9.png)
-
-![](enclosure-10.png)
-
-![](enclosure-11.png)
-
 ![](enclosure-12.png)
 
-![](enclosure-13.png)
+![](enclosure-1.png)

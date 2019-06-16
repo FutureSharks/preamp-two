@@ -42,13 +42,13 @@ The PCBs and schematics were created in [KiCad](http://kicad-pcb.org/) and the c
 
 <a href="https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="60"></a>      <a href="https://www.oshwa.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-oshw-outline.svg?sanitize=true" width="60"></a>      <a href="http://kicad-pcb.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-kicad.png" width="60"></a>
 
-### Enclosure
+## Enclosure
 
 <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
 
 Diagrams, CAD files and other information can be found here: [enclosure](enclosure)
 
-### Prototypes and testing
+## Prototypes and testing
 
 <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
 
