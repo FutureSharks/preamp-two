@@ -2,10 +2,10 @@ import digitalio
 import board
 import busio
 import time
-from modules import MdacAttenuator, InputSelector, EncoderPanel, calculate_volume_ring, calculate_input_ring
+from modules import MdacAttenuator, InputSelector, VolumeControl, InputControl
 
-
-volume_fade_in_done = False
+rings_faded = False
+rings_fade_timeout = 3
 debug_mode = True
 
 ir_input = digitalio.DigitalInOut(board.A0)
@@ -16,32 +16,35 @@ attenuator = MdacAttenuator(spi, cs_mdac, steps=128)
 selector = InputSelector(spi, cs_input_selector)
 
 
-volume_control = EncoderPanel(
+volume_control = VolumeControl(
     pixel_pin=board.D10,
     encoder_pin_a=board.D7,
     encoder_pin_b=board.D9,
-    increment_before_change=1,
     change_object=attenuator,
 )
 
-input_control = EncoderPanel(
+input_control = InputControl(
     pixel_pin=board.D13,
     encoder_pin_a=board.D11,
     encoder_pin_b=board.D12,
-    increment_before_change=26,
     change_object=selector,
 )
 
-previous_level = 0
-previous_input = 1
+
 
 while True:
     volume_control.read_encoder()
-    if previous_level != attenuator.level:
-        volume_control.write_single_pixel(*calculate_volume_ring(attenuator.level))
-    previous_level = attenuator.level
-
     input_control.read_encoder()
-    if previous_input != selector.input_current:
-        input_control.fill_pixel_ring(calculate_input_ring(selector.input_current))
-    previous_input = selector.input_current
+
+    now = time.time()
+
+    if (now - volume_control.last_change_time) > rings_fade_timeout and (now - input_control.last_change_time) > rings_fade_timeout:
+        if not rings_faded:
+            volume_control.fade_ring()
+            input_control.fade_ring()
+            rings_faded = True
+    else:
+        if rings_faded:
+            volume_control.unfade_ring()
+            input_control.unfade_ring()
+        rings_faded = False
