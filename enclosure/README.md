@@ -14,6 +14,8 @@ STL of rear: [rear.stl](rear.stl)
 
 STL of knob: [knob.stl](knob.stl)
 
+STL of knob and bearing bracket: [bearing-bracket.stl](bearing-bracket.stl)
+
 ## Photos
 
 ![](enclosure-11.png)
