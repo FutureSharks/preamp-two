@@ -15,11 +15,12 @@ class InputControl(EncoderPanel):
         self.encoder_last_position = 0
         self.encoder_last_change = 0
         self.encoder_position = 0
-        self.colour_background = [0, 3, 3, 0]
+        self.colour_background = [0, 0, 0, 0]
         self.colour_input_pixel = 0
         self.last_change_time = time.time()
         self.debug = debug
-        self.set_ring_by_input()
+        self.counter = 0
+        self.update_ring_colour()
 
     def _print(self, message):
         '''
@@ -29,6 +30,51 @@ class InputControl(EncoderPanel):
             return
         else:
             print('input-control: {0}'.format(message))
+
+    def update_ring_colour(self):
+        '''
+        Updates the ring colour based on the current encoder position counter
+        '''
+        if self.counter < 0:
+            self.counter = 127
+        if self.counter > 127:
+            self.counter = 0
+
+        pos = self.counter
+
+        if pos < 0 or pos > 127:
+            r = g = b = 0
+        elif pos < 43:
+            r = int(pos * 3)
+            g = int(127 - pos*3)
+            b = 0
+        elif pos < 85:
+            pos -= 43
+            r = int(127 - pos*3)
+            g = 0
+            b = int(pos*3)
+        else:
+            pos -= 85
+            r = 0
+            g = int(pos*3)
+            b = int(127 - pos*3)
+
+        input = int(self.counter/25) + 1
+        if self.selector.input_current != input:
+            self.selector.select_input(input)
+            self.flash_ring()
+            print(self.counter)
+
+        self.fill_pixel_ring((int(r/8), int(g/8), int(b/8), 0))
+
+    def flash_ring(self):
+        '''
+        Fades ring to a low brightness
+        '''
+        self.ring.fill([8, 0, 0, 0])
+        self.ring.fill([0, 8, 0, 0])
+        self.ring.fill([0, 0, 8, 0])
+        return
 
     def fade_ring(self):
         '''
@@ -46,31 +92,6 @@ class InputControl(EncoderPanel):
         self.fill_pixel_ring(self.calculate_input_ring(self.selector.input_current))
         return
 
-    def set_ring_by_input(self):
-        '''
-        Returns the RGBW values for the ring of 16 NeoPixels on the input selector
-        '''
-        self.fill_pixel_ring(self.colour_background)
-        pixel_value = self.colour_background.copy()
-        pixel_value[self.colour_input_pixel] = 32
-
-        if self.selector.input_current == 1:
-            pxl_range = range(0, 3)
-        if self.selector.input_current == 2:
-            pxl_range = range(2, 5)
-        if self.selector.input_current == 3:
-            pxl_range = range(4, 7)
-        if self.selector.input_current == 4:
-            pxl_range = range(6, 9)
-        if self.selector.input_current == 5:
-            pxl_range = range(8, 11)
-        if self.selector.input_current == 6:
-            pxl_range = range(10, 13)
-
-        for pxl in pxl_range:
-            self.write_single_pixel(pxl, pixel_value)
-            print(pxl, pixel_value)
-
     def read_encoder(self):
         '''
         Reads the position of the encoder
@@ -80,14 +101,13 @@ class InputControl(EncoderPanel):
         if self.encoder_position == self.encoder_last_position:
             return
 
-        if self.encoder_position > (self.encoder_last_change + self.increment_before_change):
-            self.selector.up()
-            self.set_ring_by_input()
-            self.encoder_last_change = self.encoder_position
-        elif self.encoder_position < (self.encoder_last_change - self.increment_before_change):
-            self.selector.down()
-            self.set_ring_by_input()
-            self.encoder_last_change = self.encoder_position
+        if self.encoder_position > self.encoder_last_position:
+            self.counter += 1
+            self.update_ring_colour()
+
+        elif self.encoder_position < self.encoder_last_position:
+            self.counter -= 1
+            self.update_ring_colour()
 
         self.encoder_last_position = self.encoder_position
-        self.last_change_time = time.time()
+        self.encoder_last_change_time = time.time()

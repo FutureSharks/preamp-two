@@ -11,7 +11,7 @@ class EncoderPanel(object):
     '''
     def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b):
         self.ring_num_neopixels = 16
-        self.ring_offset = -3
+        self.ring_offset = 5
         self.offset_ring_addesses = list(range(0, self.ring_num_neopixels))[self.ring_offset:] + list(range(0, self.ring_num_neopixels))[:self.ring_offset]
         self.ring = neopixel.NeoPixel(
             pin=pixel_pin,
