@@ -27,6 +27,7 @@ input_control = InputControl(
     encoder_pin_a=board.D7,
     encoder_pin_b=board.D9,
     selector=selector,
+    input=3,
     debug=debug_mode
 )
 

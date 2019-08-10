@@ -8,20 +8,18 @@ class InputControl(EncoderPanel):
     '''
     Input control module
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, selector, debug=False):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, selector, input=1, debug=False):
         super(InputControl, self).__init__(pixel_pin, encoder_pin_a, encoder_pin_b)
         self.selector = selector
-        self.increment_before_change = 26
         self.encoder_last_position = 0
-        self.encoder_last_change = 0
         self.encoder_position = 0
-        self.colour_background = [0, 0, 0, 0]
-        self.colour_input_pixel = 0
         self.last_change_time = time.time()
         self.debug = debug
-        self.counter = 0
         self.counter_crossover_points = [int((i*21.17) + 1) for i in range(0, 6)]
+        self.selector.select_input(input)
+        self.counter = self.counter_crossover_points[input - 1]
         self.update_ring_colour()
+
 
     def _print(self, message):
         '''
