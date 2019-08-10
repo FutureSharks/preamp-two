@@ -1,34 +1,28 @@
 # -*- coding: utf-8 -*-
 
-import neopixel
-from rotaryio import IncrementalEncoder
 import time
+from .encoder_panel import EncoderPanel
 
 
-class VolumeControl(object):
+class VolumeControl(EncoderPanel):
     '''
-    Volume control module: EN1J encoder surrounded by a ring of 16 RGBW NeoPixels
+    Volume control module
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, change_object, debug=True, fade_colour=(1, 0, 1, 0)):
-        self.change_object = change_object
-        self.increment_before_change = 1
-        self.ring_num_neopixels = 16
-        self.ring_offset = 5
-        self.offset_ring_addesses = list(range(0, self.ring_num_neopixels))[self.ring_offset:] + list(range(0, self.ring_num_neopixels))[:self.ring_offset]
-        self.ring = neopixel.NeoPixel(
-            pin=pixel_pin,
-            n=self.ring_num_neopixels,
-            pixel_order=(1, 0, 2, 3)
-        )
-        self.encoder_resolution = 128
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, attenuator, level=30, debug=False):
+        super(VolumeControl, self).__init__(pixel_pin, encoder_pin_a, encoder_pin_b)
+        self.attenuator = attenuator
         self.encoder_last_position = 0
-        self.encoder_last_change = 0
+        self.encoder_last_change_position = 0
         self.encoder_position = 0
-        self.fade_colour = fade_colour
-        self.encoder = IncrementalEncoder(encoder_pin_a, encoder_pin_b)
-        self.last_change_time = time.time()
+        self.encoder_last_change_time = time.time()
+        self.colour_background = [0, 3, 3, 0]
+        self.colour_level_pixel = 0
+        self.pixel_max_brightness = 64
         self.debug = debug
-        self.intro_animation()
+        self.fade_ring()
+        time.sleep(0.5)
+        self.fade_to_level(level)
+
 
     def _print(self, message):
         '''
@@ -39,50 +33,23 @@ class VolumeControl(object):
         else:
             print('volume-control: {0}'.format(message))
 
-    def write_single_pixel(self, pixel_number, pixel_value):
-        '''
-        Writes to a single NeoPixel on the ring
-        '''
-        if pixel_number > self.ring_num_neopixels:
-            _print('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
-            return
+    def up(self):
+        self.attenuator.up()
+        self.write_single_pixel(*self._calculate_volume_ring(self.attenuator.level))
 
-        self.ring[self.offset_ring_addesses[pixel_number]] = pixel_value
-        self.ring.show()
+    def down(self):
+        self.attenuator.down()
+        self.write_single_pixel(*self._calculate_volume_ring(self.attenuator.level))
 
-    def fill_pixel_ring(self, pixel_values):
+    def fade_to_level(self, level):
         '''
-        Fills the ring with a single value
+        Fades to specifiied level
         '''
-        self.ring.fill(pixel_values)
-        self.ring.show()
+        self._print('fading to: {0}'.format(level))
+        while self.attenuator.level < level:
+            time.sleep(0.01)
+            self.up()
 
-    def intro_animation(self):
-        '''
-        Displays a short ring animation
-        '''
-        for pxl in range(self.ring_num_neopixels):
-            n = self.offset_ring_addesses[pxl]
-            n_1 = self.offset_ring_addesses[min(pxl + 1, self.ring_num_neopixels - 1)]
-            self.ring[n] = (0, 0, 255, 0)
-            self.ring[n_1] = (255, 0, 0, 0)
-            time.sleep(0.02)
-
-        self.ring.fill((0, 3, 3, 0))
-
-    def test_ring(self):
-        '''
-        Cycles through colors for the whole ring
-        '''
-        self.ring.fill((255, 0, 0, 0))
-        time.sleep(1)
-        self.ring.fill((0, 255, 0, 0))
-        time.sleep(1)
-        self.ring.fill((0, 0, 255, 0))
-        time.sleep(1)
-        self.ring.fill((0, 0, 0, 255))
-        time.sleep(1)
-        self.ring.fill((0, 0, 0, 0))
         return
 
     def fade_ring(self):
@@ -90,7 +57,7 @@ class VolumeControl(object):
         Fades ring to a low brightness
         '''
         self._print('fading')
-        self.ring.fill(self.fade_colour)
+        self.ring.fill(self.colour_background)
         return
 
     def unfade_ring(self):
@@ -98,28 +65,26 @@ class VolumeControl(object):
         Fades ring to a low brightness
         '''
         self._print('unfading')
-        self.ring.fill((0, 3, 3, 0))
-        pixel_val = self._calculate_volume_ring(self.change_object.level)
-        for pxl in range(pixel_val[0]):
+        self.fade_ring()
+        for i in range(0, self.attenuator.level):
+            self.write_single_pixel(*self._calculate_volume_ring(i))
             time.sleep(0.01)
-            self.write_single_pixel(pxl, pixel_val[1])
+
         return
 
     def _calculate_volume_ring(self, level):
         '''
         Returns the RGBW values for the 16 NeoPixels given a volume level
         '''
-        levels = 128
-        num_pixels = 16
-        pxl_max_value = 64
-        primary_colour = (8, 0, 0, 0)
-        secondary_colour = (0, 0, 8, 0)
-
-        pxl_val = levels / num_pixels
+        levels = len(self.attenuator.levels)
+        pxl_val = levels / self.ring_num_neopixels
         start_offset = int(level / pxl_val)
         pixel_partially_lit = (level / pxl_val) - start_offset
-        pixel = int(pxl_max_value * pixel_partially_lit)
-        return (start_offset + 1, [pixel, 3, 3, 0])
+        level_pixel = int(self.pixel_max_brightness * pixel_partially_lit)
+        pixel_value = self.colour_background.copy()
+        pixel_value[self.colour_level_pixel] = level_pixel
+
+        return (start_offset + 1, pixel_value)
 
     def read_encoder(self):
         '''
@@ -127,17 +92,14 @@ class VolumeControl(object):
         '''
         self.encoder_position = self.encoder.position
 
-        if self.encoder_last_position == self.encoder_position:
+        if self.encoder_position == self.encoder_last_position:
             return
 
-        if self.encoder_position > (self.encoder_last_change + self.increment_before_change):
-            self.change_object.up()
-            self.encoder_last_change = self.encoder_position
-            self.write_single_pixel(*self._calculate_volume_ring(self.change_object.level))
-        elif self.encoder_position < (self.encoder_last_change - self.increment_before_change):
-            self.change_object.down()
-            self.encoder_last_change = self.encoder_position
-            self.write_single_pixel(*self._calculate_volume_ring(self.change_object.level))
+        if self.encoder_position > self.encoder_last_position:
+            self.up()
+
+        elif self.encoder_position < self.encoder_last_position:
+            self.down()
 
         self.encoder_last_position = self.encoder_position
-        self.last_change_time = time.time()
+        self.encoder_last_change_time = time.time()

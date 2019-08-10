@@ -9,7 +9,7 @@ class MdacAttenuator(object):
     '''
     Manages an MDAC attenuator via SPI
     '''
-    def __init__(self, spi, cs, baudrate=1000000, debug=True, steps=200, attenuation_slope=80):
+    def __init__(self, spi, cs, baudrate=1000000, debug=False, steps=200, attenuation_slope=40):
         self.level = 0
         self.levels = []
         self.attenuation_slope = attenuation_slope
@@ -43,7 +43,7 @@ class MdacAttenuator(object):
             device.write(bytearray([high_byte]))
             device.write(bytearray([low_byte]))
             self.dac_value = value
-            self._print('DAC value set: {0}'.format(value))
+            self._print('set DAC value: {0}'.format(value))
 
     def _calculate_levels(self):
         '''
@@ -67,7 +67,7 @@ class MdacAttenuator(object):
             return
         self._write_dac_value(self.levels[level])
         self.level = level
-        self._print('level set {0}'.format(self.level))
+        self._print('set level: {0}'.format(self.level))
 
     def up(self):
         self.set_level(self.level + 1)
