@@ -11,7 +11,7 @@ class EncoderPanel(object):
     '''
     def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b):
         self.ring_num_neopixels = 16
-        self.ring_offset = 5
+        self.ring_offset = 6
         self.offset_ring_addesses = list(range(0, self.ring_num_neopixels))[self.ring_offset:] + list(range(0, self.ring_num_neopixels))[:self.ring_offset]
         self.ring = neopixel.NeoPixel(
             pin=pixel_pin,
@@ -23,7 +23,7 @@ class EncoderPanel(object):
 
     def write_single_pixel(self, pixel_number, pixel_value):
         '''
-        Writes to a single NeoPixel on the ring
+        Writes to a single NeoPixel on the ring from 1 to ring_num_neopixels
         '''
         if pixel_number > self.ring_num_neopixels:
             raise Exception('length of led_values cannot be higher than ring_num_neopixels: {0}'.format(self.ring_num_neopixels))
@@ -38,28 +38,14 @@ class EncoderPanel(object):
         self.ring.fill(pixel_value)
         self.ring.show()
 
-    def _calculate_ring_offset(self, pixel):
-        '''
-        Calculates offset between the top and first NeoPixels
-        '''
-        result = pixel + self.ring_offset
-
-        if result < 0:
-            result = self.ring_num_neopixels - abs(result)
-        if result > self.ring_num_neopixels - 1:
-            result = 0 + (result - self.ring_num_neopixels)
-
-        return result
-
     def intro_animation(self):
         '''
         Displays a short ring animation
         '''
-        for pxl in range(self.ring_num_neopixels):
-            n = self._calculate_ring_offset(pxl)
-            n_1 = self._calculate_ring_offset(min(pxl + 1, self.ring_num_neopixels - 1))
-            self.ring[n] = (0, 0, 255, 0)
-            self.ring[n_1] = (255, 0, 0, 0)
+        for pxl in range(1, (self.ring_num_neopixels + 1)):
+            self.write_single_pixel(pxl, (0, 0, 255, 0))
+            self.write_single_pixel(min(pxl + 1, 16), (255, 0, 0, 0))
+            self.write_single_pixel(min(pxl + 2, 16), (0, 255, 0, 0))
             time.sleep(0.02)
 
         self.ring.fill((0, 0, 0, 0))

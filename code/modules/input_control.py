@@ -74,6 +74,7 @@ class InputControl(EncoderPanel):
         self.ring.fill([8, 0, 0, 0])
         self.ring.fill([0, 8, 0, 0])
         self.ring.fill([0, 0, 8, 0])
+        self.ring.fill([0, 0, 8, 8])
         return
 
     def read_encoder(self):

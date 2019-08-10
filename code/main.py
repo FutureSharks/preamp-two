@@ -31,8 +31,6 @@ input_control = InputControl(
     debug=debug_mode
 )
 
-
-
 while True:
     volume_control.read_encoder()
     input_control.read_encoder()
