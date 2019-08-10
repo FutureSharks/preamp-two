@@ -43,7 +43,7 @@ class MdacAttenuator(object):
             device.write(bytearray([high_byte]))
             device.write(bytearray([low_byte]))
             self.dac_value = value
-            self._print('DAC value set: {0}'.format(value))
+            self._print('set DAC value: {0}'.format(value))
 
     def _calculate_levels(self):
         '''
@@ -67,7 +67,7 @@ class MdacAttenuator(object):
             return
         self._write_dac_value(self.levels[level])
         self.level = level
-        self._print('level set {0}'.format(self.level))
+        self._print('set level: {0}'.format(self.level))
 
     def up(self):
         self.set_level(self.level + 1)

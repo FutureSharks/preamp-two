@@ -35,16 +35,3 @@ input_control = InputControl(
 while True:
     volume_control.read_encoder()
     input_control.read_encoder()
-
-    now = time.time()
-
-    if (now - volume_control.last_change_time) > rings_fade_timeout and (now - input_control.last_change_time) > rings_fade_timeout:
-        if not rings_faded:
-            volume_control.fade_ring()
-            input_control.fade_ring()
-            rings_faded = True
-    else:
-        if rings_faded:
-            volume_control.unfade_ring()
-            input_control.unfade_ring()
-        rings_faded = False

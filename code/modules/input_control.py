@@ -20,6 +20,7 @@ class InputControl(EncoderPanel):
         self.last_change_time = time.time()
         self.debug = debug
         self.counter = 0
+        self.counter_crossover_points = [int((i*21.17) + 1) for i in range(0, 6)]
         self.update_ring_colour()
 
     def _print(self, message):
@@ -33,7 +34,7 @@ class InputControl(EncoderPanel):
 
     def update_ring_colour(self):
         '''
-        Updates the ring colour based on the current encoder position counter
+        Updates the ring colour based on the current encoder position counter and changes inputs
         '''
         if self.counter < 0:
             self.counter = 127
@@ -59,44 +60,42 @@ class InputControl(EncoderPanel):
             g = int(pos*3)
             b = int(127 - pos*3)
 
-        input = int(self.counter/25) + 1
-        if self.selector.input_current != input:
+        input = int(self.counter/21.17) + 1
+
+        if self.counter in self.counter_crossover_points and self.selector.input_current != input:
             self.selector.select_input(input)
             self.flash_ring()
-            print(self.counter)
 
+        self.last_change_time = time.time()
         self.fill_pixel_ring((int(r/8), int(g/8), int(b/8), 0))
 
     def flash_ring(self):
         '''
-        Fades ring to a low brightness
+        Flashes the ring briefly to indicate a change
         '''
         self.ring.fill([8, 0, 0, 0])
         self.ring.fill([0, 8, 0, 0])
         self.ring.fill([0, 0, 8, 0])
         return
 
-    def fade_ring(self):
-        '''
-        Fades ring to a low brightness
-        '''
-        self._print('fading')
-        self.ring.fill(self.colour_background)
-        return
-
-    def unfade_ring(self):
-        '''
-        Fades ring to a low brightness
-        '''
-        self._print('unfading')
-        self.fill_pixel_ring(self.calculate_input_ring(self.selector.input_current))
-        return
-
     def read_encoder(self):
         '''
-        Reads the position of the encoder
+        Reads the position of the encoder and takes action
         '''
         self.encoder_position = self.encoder.position
+
+        if self.counter not in self.counter_crossover_points and time.time() - self.last_change_time > 2:
+            desired_point = self.counter_crossover_points[self.selector.input_current - 1]
+            self._print('fading to: {0}'.format(desired_point))
+            while self.counter not in self.counter_crossover_points:
+                if self.counter > 106:
+                    self.counter += 1
+                elif self.counter > desired_point:
+                    self.counter -= 1
+                else:
+                    self.counter += 1
+                self.update_ring_colour()
+            self._print('fading done')
 
         if self.encoder_position == self.encoder_last_position:
             return
@@ -110,4 +109,3 @@ class InputControl(EncoderPanel):
             self.update_ring_colour()
 
         self.encoder_last_position = self.encoder_position
-        self.encoder_last_change_time = time.time()
