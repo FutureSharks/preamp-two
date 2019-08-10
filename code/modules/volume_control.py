@@ -8,7 +8,7 @@ class VolumeControl(EncoderPanel):
     '''
     Volume control module
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, attenuator, level=30, debug=True):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, attenuator, level=30, debug=False):
         super(VolumeControl, self).__init__(pixel_pin, encoder_pin_a, encoder_pin_b)
         self.attenuator = attenuator
         self.encoder_last_position = 0

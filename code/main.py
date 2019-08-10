@@ -4,16 +4,14 @@ import busio
 import time
 from modules import MdacAttenuator, InputSelector, VolumeControl, InputControl
 
-rings_faded = False
-rings_fade_timeout = 3
 debug_mode = True
 
 ir_input = digitalio.DigitalInOut(board.A0)
 cs_input_selector = digitalio.DigitalInOut(board.A4)
 cs_mdac = digitalio.DigitalInOut(board.A5)
 spi = busio.SPI(board.SCK, MOSI=board.MOSI)
-attenuator = MdacAttenuator(spi, cs_mdac, steps=128)
-selector = InputSelector(spi, cs_input_selector)
+attenuator = MdacAttenuator(spi, cs_mdac, steps=128, debug=debug_mode)
+selector = InputSelector(spi, cs_input_selector, debug=debug_mode)
 
 
 volume_control = VolumeControl(
@@ -21,6 +19,7 @@ volume_control = VolumeControl(
     encoder_pin_a=board.D11,
     encoder_pin_b=board.D12,
     attenuator=attenuator,
+    debug=debug_mode
 )
 
 input_control = InputControl(
@@ -28,6 +27,7 @@ input_control = InputControl(
     encoder_pin_a=board.D7,
     encoder_pin_b=board.D9,
     selector=selector,
+    debug=debug_mode
 )
 
 

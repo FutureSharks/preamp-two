@@ -9,7 +9,7 @@ class MdacAttenuator(object):
     '''
     Manages an MDAC attenuator via SPI
     '''
-    def __init__(self, spi, cs, baudrate=1000000, debug=True, steps=200, attenuation_slope=40):
+    def __init__(self, spi, cs, baudrate=1000000, debug=False, steps=200, attenuation_slope=40):
         self.level = 0
         self.levels = []
         self.attenuation_slope = attenuation_slope

@@ -8,7 +8,7 @@ class InputControl(EncoderPanel):
     '''
     Input control module
     '''
-    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, selector, debug=True):
+    def __init__(self, pixel_pin, encoder_pin_a, encoder_pin_b, selector, debug=False):
         super(InputControl, self).__init__(pixel_pin, encoder_pin_a, encoder_pin_b)
         self.selector = selector
         self.increment_before_change = 26
