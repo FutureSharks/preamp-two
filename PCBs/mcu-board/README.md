@@ -1,36 +1,36 @@
 # Micro controller board
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
+[![](../../images/page-break-1.png)](#)
 
 The PCB holds the [Adafruit ItsyBitsy M4 Express](https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4), connectors and level shifters. The MDAC attenuator, input selector, both encoder panels and power digital power supply all connect to this PCB.
 
-### Photos
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_1.jpg" width="600">
+![](../../images/mcu_board_1.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_2.jpg" width="600">
+![](../../images/mcu_board_2.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_3.jpg" width="600">
+![](../../images/mcu_board_3.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_5.jpg" width="600">
+![](../../images/mcu_board_5.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_3d.png" width="600">
+![](../../images/mcu_board_3d.png)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+## <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
-N/A
+The main python code is here: [main.py](../../code/main.py)
 
-### Schematic
+## Schematic
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_schematic.png" width="900">
+![](../../images/mcu_board_schematic.png)
 
-### Layout
+## Layout
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_pcb_front.png" width="900">
+![](../../images/mcu_board_pcb_front.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mcu_board_pcb_back.png" width="900">
+![](../../images/mcu_board_pcb_back.png)
 
-### BoM
+## BoM
 
 | Reference        | Quantity | Value                    | Footprint                                                      |
 |------------------|----------|--------------------------|----------------------------------------------------------------|

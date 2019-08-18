@@ -1,34 +1,32 @@
 # RCA Panel
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_rca_panel.png" width="900"></a>
+[![](../../images/page-break-4.png)](#)
 
-This PCB provides mounting for the RCA sockets and [input selector](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/input-selector).
+This PCB provides mounting for the RCA sockets and connects with the [input selector](../input-selector).
 
-### Photos
+The RCA sockets are [CMC](http://www.audio-cmc.com/rca-jacks-c.html) 805 model.
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_1.jpg" width="900">
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_2.jpg" width="900">
+![](../../images/rca_panel_1.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_3.jpg" width="900">
+![](../../images/rca_panel_2.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_4.jpg" width="900">
+![](../../images/rca_panel_3.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_3d.png" width="900">
+![](../../images/rca_panel_4.jpg)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+![](../../images/rca_panel_3d.png)
 
-N/A
+## Schematic
 
-### Schematic
+![](../../images/rca_panel_schematic.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_schematic.png" width="900">
+## Layout
 
-### Layout
+![](../../images/rca_panel_pcb_front.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/rca_panel_pcb_front.png" width="900">
-
-### BoM
+## BoM
 
 | Reference   |  Quantity |  Value  |  Footprint / Notes  |
 |-------------|-----------|---------|-------------|
