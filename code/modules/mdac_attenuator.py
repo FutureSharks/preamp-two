@@ -70,7 +70,13 @@ class MdacAttenuator(object):
         self._print('set level: {0}'.format(self.level))
 
     def up(self):
+        '''
+        Increases level
+        '''
         self.set_level(self.level + 1)
 
     def down(self):
+        '''
+        Decreases level
+        '''
         self.set_level(self.level - 1)

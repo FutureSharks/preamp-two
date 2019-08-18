@@ -1,6 +1,6 @@
 # MDAC attenuator
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_mdac_attenuator.png" width="900"></a>
+[![](../../images/page-break-4.png)](#)
 
 Based on designs from these sources:
 
@@ -24,31 +24,31 @@ Features:
 
 Here is the DIYAudio forum thread with my prototypes and questions: [Solid state R2R attenuator using analog switches or multiplying DAC](https://www.diyaudio.com/forums/analog-line-level/235853-solid-r2r-attenuator-using-analog-switches-multiplying-dac.html)
 
-### Photos
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3.jpg" width="900">
+![](../../images/mdac_attenuator_3.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_1.jpg" width="900">
+![](../../images/mdac_attenuator_1.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_2.jpg" width="900">
+![](../../images/mdac_attenuator_2.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_3d.png" width="900">
+![](../../images/mdac_attenuator_3d.png)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+## <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
-CircuitPython module is here: [code/modules/input_selector.py](https://github.com/FutureSharks/preamp-two/blob/master/code/modules/mdac_attenuator.py)
+Python module is here: [code/modules/mdac_attenuator.py](../../code/modules/mdac_attenuator.py)
 
-### Schematic
+## Schematic
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_schematic.png" width="900">
+![](../../images/mdac_attenuator_schematic.png)
 
-### Layout
+## Layout
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_front.png" width="600">
+![](../../images/mdac_attenuator_pcb_front.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/mdac_attenuator_pcb_back.png" width="600">
+![](../../images/mdac_attenuator_pcb_back.png)
 
-### BoM
+## BoM
 
 | Reference                |  Quantity |  Value  |  Footprint / Notes  |
 |--------------------------|-----------|---------|------------------|

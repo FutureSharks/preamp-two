@@ -1,57 +1,50 @@
 # Preamp Two
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
+[![](images/page-break-1.png)](#)
 
-![complete](images/complete_1.jpg)
+![complete](enclosure/enclosure-11.png)
 
-Here is my project to build a Hi-Fi preamplifier. This repository includes schematics, PCB layouts, CircuitPython code, BoMs, measurements and photos.
+Here is my Hi-Fi preamplifier project. In this repository you can find schematics, PCB layouts, CircuitPython code, BoMs, measurements and photos.
 
 Features:
 
+* MDAC volume controller
+* 6 way relay based input selector
 * High performance design with measurements
-* Quality components
-* Completely digitally Controlled
-* Modular design
-* All open source
+* Quality components and modular design
+* Completely digitally controlled
+* All open source and written in Python
 
-![prototype](prototypes/prototype-16.gif)
-
-![complete](images/complete_2.jpg)
-
-![complete](images/complete_3.jpg)
-
-![complete](images/complete_4.jpg)
-
-![prototype](images/diagram.png)
-
-### Components
-
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
+## Components and code
 
 The preamplifier is made up of a number of connected components:
 
-* MDAC attenuator ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/mdac-attenuator), [code](https://github.com/FutureSharks/preamp-two/tree/master/code/modules/mdac_attenuator.py)): Controls the volume
-* Input selector ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/input-selector), [code](https://github.com/FutureSharks/preamp-two/tree/master/code/modules/input_selector.py)): Selects the input
-* Encoder panel ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/encoder-panel), [code](https://github.com/FutureSharks/preamp-two/tree/master/code/modules/encoder_panel.py)): Holds rotary encoder and LED indicator
-* Power Supply 5V ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/psu-digital)): Power supply for digital components.
-* Power Supply +/- 15V ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/psu-analog)): Power supply for MDAC attenuator op-amp
-* Micro controller board ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/mcu-board)): Holds the micro controller and other connectors
-* RCA panel ([PCB](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/rca-panel)): For the RCA sockets and connectors
+* MDAC attenuator ([PCB](PCBs/mdac-attenuator), [code](code/modules/mdac_attenuator.py)): Controls the volume
+* Input selector ([PCB](PCBs/input-selector), [code](code/modules/input_selector.py)): Selects the input
+* Encoder panel ([PCB](PCBs/encoder-panel), [code](code/modules/encoder_panel.py)): Holds rotary encoder and LED indicator ring
+* Power Supply 5V ([PCB](PCBs/psu-digital)): Power supply for digital components.
+* Power Supply +/- 15V ([PCB](PCBs/psu-analog)): Analog Power supply for MDAC attenuator
+* Micro controller board ([PCB](PCBs/mcu-board), [code](code/main.py)): Holds the [Itsy Bitsy M4 Express](https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4?view=all) and other connectors
+* RCA panel ([PCB](PCBs/rca-panel)): For the RCA sockets and connectors
 
-The PCBs and schematics were created in [KiCad](http://kicad-pcb.org/) and the code that runs on the micro controller is [CircuitPython](https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython).
-
-<a href="https://learn.adafruit.com/welcome-to-circuitpython/what-is-circuitpython"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="60"></a>      <a href="https://www.oshwa.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-oshw-outline.svg?sanitize=true" width="60"></a>      <a href="http://kicad-pcb.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-kicad.png" width="60"></a>
+The PCBs and schematics were created in [KiCad](http://kicad-pcb.org/) and the code that runs on the micro controller is [CircuitPython](https://circuitpython.org/).
 
 ## Enclosure
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
-
 Diagrams, CAD files and other information can be found here: [enclosure](enclosure)
+
+## Measurements
+
+THD, S/N ratio and power consumption: [measurements](measurements)
 
 ## Prototypes and testing
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
+See here for a number of different [prototypes](prototypes). All PCBs were made by [OSH Park](https://oshpark.com/).
 
-See here: [prototypes](prototypes)
+## Photos
 
-PCBs made by [OSH Park](https://oshpark.com/).
+[![photos](images/gallery.png)](images#images)
+
+---
+
+<a href="https://circuitpython.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="60"></a>      <a href="https://www.oshwa.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-oshw-outline.svg?sanitize=true" width="60"></a>      <a href="http://kicad-pcb.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-kicad.png" width="60"></a>

@@ -1,10 +1,9 @@
 import digitalio
 import board
 import busio
-import time
 from modules import MdacAttenuator, InputSelector, VolumeControl, InputControl
 
-debug_mode = True
+debug_mode = False
 
 ir_input = digitalio.DigitalInOut(board.A0)
 cs_input_selector = digitalio.DigitalInOut(board.A4)
@@ -27,7 +26,7 @@ input_control = InputControl(
     encoder_pin_a=board.D7,
     encoder_pin_b=board.D9,
     selector=selector,
-    input=3,
+    input=4,
     debug=debug_mode
 )
 

@@ -18,13 +18,21 @@ class InputSelector(object):
         self.mute_enabled = True
         self.debug = debug
         self._device = spi_device.SPIDevice(spi, cs, baudrate=baudrate, polarity=0, phase=0)
-
-        print('input-selector starting init')
+        self._print('starting init')
         self._set_register(0, 0)
         self._set_register(1, 0)
-        print('input-selector waiting for mute delay')
+        self._print('waiting for mute delay')
         time.sleep(self.mute_delay)
         self.toggle_mute()
+
+    def _print(self, message):
+        '''
+        Small function for printing information is debug option is enabled
+        '''
+        if not self.debug:
+            return
+        else:
+            print('input-selector: {0}'.format(message))
 
     def _set_register(self, register, value):
         '''
@@ -52,11 +60,11 @@ class InputSelector(object):
         if self.mute_enabled:
             self._set_gpio(64, 0)
             self.mute_enabled = False
-            print('input-selector mute disabled')
+            self._print('mute disabled')
         else:
             self._set_gpio(0, 0)
             self.mute_enabled = True
-            print('input-selector mute enabled')
+            self._print('mute enabled')
 
     def _disable_all_relays(self, with_delay=True):
         '''
@@ -109,7 +117,7 @@ class InputSelector(object):
             self._set_gpio(90, 84)
             self._disable_all_relays()
 
-        print('input-selector input {0} selected'.format(input))
+        self._print('input {0} selected'.format(input))
         self.input_current = input
 
     def next_input(self, increment=1):
@@ -119,7 +127,13 @@ class InputSelector(object):
         self.select_input(input=self.input_current + increment)
 
     def up(self):
+        '''
+        Switches up to next input
+        '''
         self.next_input(1)
 
     def down(self):
+        '''
+        Switches down to next input
+        '''
         self.next_input(-1)

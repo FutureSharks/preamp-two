@@ -1,6 +1,6 @@
 # Input Selector
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
+[![](../../images/page-break-2.png)](#)
 
 * 6x inputs
 * Mute for output
@@ -8,33 +8,33 @@
 * Latching relays for low current draw
 * Compatible with 5V and 3V relays
 * Uses high quality Panasonic relays
-* Stackable with [RCA panel](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/rca-panel) and [MDAC attenuator](https://github.com/FutureSharks/preamp-two/tree/master/PCBs/mdac-attenuator)
+* Stackable with [RCA panel](../rca-panel) and [MDAC attenuator](../mdac-attenuator)
 
-### Photos
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_1.jpg" width="900">
+![](../../images/input_selector_1.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_2.jpg" width="900">
+![](../../images/input_selector_2.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_3.jpg" width="900">
+![](../../images/input_selector_3.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_3d.png" width="900">
+![](../../images/input_selector_3d.png)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+## <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
-CircuitPython module is here: [code/modules/input_selector.py](https://github.com/FutureSharks/preamp-two/blob/master/code/modules/input_selector.py)
+Python module is here: [code/modules/input_selector.py](../../code/modules/input_selector.py)
 
-### Schematic
+## Schematic
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_schematic.png" width="900">
+![](../../images/input_selector_schematic.png)
 
-### Layout
+## Layout
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_pcb_front.png" width="600">
+![](../../images/input_selector_pcb_front.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/input_selector_pcb_back.png" width="600">
+![](../../images/input_selector_pcb_back.png)
 
-### BoM
+## BoM
 
 | Reference                                 |  Quantity |  Value    |  Footprint / Notes |
 |-------------------------------------------|-----------|-----------|-----------------|

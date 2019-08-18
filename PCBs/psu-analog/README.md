@@ -1,32 +1,26 @@
 # Analog Power Supply
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_rca_panel.png" width="900"></a>
+[![](../../images/page-break-1.png)](#)
 
-This the +/- 15V power supply. It powers the op-amp in the MDAC attenuator.
+This the +/- 15V power supply. It powers the op-amp in the MDAC attenuator using TPS7A3301 regulators.
 
-It uses a TPS7A3301 regulators.
+The PCB files are in Eagle format.
 
-The PCB files are in Eagle format. I will convert them to KiCAD soon.
+## Photos
 
-### Photos
+![](../../images/psu-analog-1.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-analog-1.jpg" width="600">
+![](../../images/psu-analog-2.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-analog-2.jpg" width="600">
+## Schematic
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+![](../../images/psu-analog-schematic.jpg)
 
-N/A
+## Layout
 
-### Schematic
+![](../../images/psu-analog-front.jpg)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-analog-schematic.jpg" width="900">
-
-### Layout
-
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-analog-front.jpg" width="900">
-
-### BoM
+## BoM
 
 |  Part name | RS part          | Farnell Part | Mouser Part          | Description                                                     | EVM Part name | Notes                |
 | ---------- | ---------------- | ------------ | -------------------- | --------------------------------------------------------------- | ------------- | -------------------- |

@@ -12,15 +12,13 @@ class VolumeControl(EncoderPanel):
         super(VolumeControl, self).__init__(pixel_pin, encoder_pin_a, encoder_pin_b)
         self.attenuator = attenuator
         self.encoder_last_position = 0
-        self.encoder_last_change_position = 0
         self.encoder_position = 0
-        self.encoder_last_change_time = time.time()
-        self.colour_background = [0, 3, 3, 0]
         self.colour_level_pixel = 0
         self.pixel_max_brightness = 64
+        self.colour_background = [0, 3, 3, 0]
         self.debug = debug
         self.fade_ring()
-        time.sleep(0.5)
+        time.sleep(1)
         self.fade_to_level(level)
 
 
@@ -34,10 +32,16 @@ class VolumeControl(EncoderPanel):
             print('volume-control: {0}'.format(message))
 
     def up(self):
+        '''
+        Increases level
+        '''
         self.attenuator.up()
         self.write_single_pixel(*self._calculate_volume_ring(self.attenuator.level))
 
     def down(self):
+        '''
+        Decreases level
+        '''
         self.attenuator.down()
         self.write_single_pixel(*self._calculate_volume_ring(self.attenuator.level))
 
@@ -95,11 +99,10 @@ class VolumeControl(EncoderPanel):
         if self.encoder_position == self.encoder_last_position:
             return
 
-        if self.encoder_position > self.encoder_last_position:
+        if self.encoder_position > (self.encoder_last_position + 1):
             self.up()
+            self.encoder_last_position = self.encoder_position
 
-        elif self.encoder_position < self.encoder_last_position:
+        elif self.encoder_position < (self.encoder_last_position - 1):
             self.down()
-
-        self.encoder_last_position = self.encoder_position
-        self.encoder_last_change_time = time.time()
+            self.encoder_last_position = self.encoder_position

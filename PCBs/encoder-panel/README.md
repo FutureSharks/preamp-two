@@ -1,37 +1,39 @@
 # Encoder Panel
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_input_selector.png" width="900"></a>
-
-**work in progress**
+[![](../../images/page-break-1.png)](#)
 
 The module is the sole human interface to the preamp. It consists of 2 things:
 
 - A high quality optical encoder for changing of the volume and input
 - A ring of [NeoPixels](https://learn.adafruit.com/adafruit-neopixel-uberguide/the-magic-of-neopixels) as a visual indicator and to give feedback
 
-### Photos
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_1.jpg" width="900">
+![](../../prototypes/prototype-16.gif)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_2.jpg" width="900">
+![](../../images/animation-2.gif)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_3d.png" width="900">
+![](../../images/encoder_panel_1.jpg)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+![](../../images/encoder_panel_2.jpg)
 
-CircuitPython module is here: [code/modules/encoder_panel.py](https://github.com/FutureSharks/preamp-two/blob/master/code/modules/encoder_panel.py)
+![](../../images/encoder_panel_3d.png)
 
-### Schematic
+## <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_schematic.png" width="900">
+Python module is here: [code/modules/encoder_panel.py](../../code/modules/encoder_panel.py)
 
-### Layout
+## Schematic
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_front.png" width="600">
+![](../../images/encoder_panel_schematic.png)
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/encoder_panel_pcb_back.png" width="600">
+## Layout
 
-### BoM
+![](../../images/encoder_panel_pcb_front.png)
+
+![](../../images/encoder_panel_pcb_back.png)
+
+## BoM
 
 | Reference  | Quantity | Value       | Footprint                                                      |
 |------------|----------|-------------|----------------------------------------------------------------|

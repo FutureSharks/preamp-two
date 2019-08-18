@@ -83,16 +83,21 @@ class InputControl(EncoderPanel):
         '''
         self.encoder_position = self.encoder.position
 
-        if self.counter not in self.counter_crossover_points and time.time() - self.last_change_time > 2:
+        if self.counter not in self.counter_crossover_points and time.time() - self.last_change_time > 1:
             desired_point = self.counter_crossover_points[self.selector.input_current - 1]
             self._print('fading to: {0}'.format(desired_point))
             while self.counter not in self.counter_crossover_points:
-                if self.counter > 106:
-                    self.counter += 1
+                if self.selector.input_current == 1:
+                    if self.counter > desired_point and self.counter < 106:
+                        self.counter -= 1
+                    else:
+                        self.counter += 1
                 elif self.counter > desired_point:
                     self.counter -= 1
-                else:
+                elif self.counter < desired_point:
                     self.counter += 1
+                else:
+                    continue
                 self.update_ring_colour()
             self._print('fading done')
 

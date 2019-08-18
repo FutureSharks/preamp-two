@@ -1,30 +1,26 @@
 # Digital Power Supply
 
-<a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/page_break_rca_panel.png" width="900"></a>
+[![](../../images/page-break-2.png)](#)
 
 This the 5V digital power supply. It powers the input selector, digital part of the MDAC attenuator, the NeoPixels in the encoder panels and the encoders.
 
 It uses a LT1763 regulator.
 
-The PCB files are in Eagle format. I will convert them to KiCAD soon.
+The PCB files are in Eagle format.
 
-### Photos
+## Photos
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-digital-1.jpg" width="600">
+![](../../images/psu-digital-1.jpg)
 
-### <a href="#"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="20"></a> Code
+## Schematic
 
-N/A
+![](../../images/psu-digital-schematic.jpg)
 
-### Schematic
+## Layout
 
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-digital-schematic.jpg" width="900">
+![](../../images/psu-digital-front.jpg)
 
-### Layout
-
-<img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/psu-digital-front.jpg" width="900">
-
-### BoM
+## BoM
 
 | Reference   | Footprint / Notes  |
 |-------------|--------------------|
