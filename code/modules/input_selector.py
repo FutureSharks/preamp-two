@@ -10,20 +10,16 @@ class InputSelector(object):
     Manages an input selector via SPI
     '''
     def __init__(self, spi, cs, baudrate=1000000, input_current=1,
-                mute_delay=1, debug=False, inputs=6, loop=True):
+                debug=False, inputs=6, loop=True):
         self.input_current = input_current
         self.inputs = inputs
         self.input_loop = loop
-        self.mute_delay = mute_delay
         self.mute_enabled = True
         self.debug = debug
         self._device = spi_device.SPIDevice(spi, cs, baudrate=baudrate, polarity=0, phase=0)
         self._print('starting init')
         self._set_register(0, 0)
         self._set_register(1, 0)
-        self._print('waiting for mute delay')
-        time.sleep(self.mute_delay)
-        self.toggle_mute()
 
     def _print(self, message):
         '''
