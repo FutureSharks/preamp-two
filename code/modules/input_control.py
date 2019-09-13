@@ -15,6 +15,7 @@ class InputControl(EncoderPanel):
         self.encoder_position = 0
         self.last_change_time = time.time()
         self.debug = debug
+        self.mute_delay = 1
         self.counter_crossover_points = [int((i*21.17) + 1) for i in range(0, 6)]
         self.selector.select_input(input)
         self.counter = self.counter_crossover_points[input - 1]
@@ -81,6 +82,11 @@ class InputControl(EncoderPanel):
         '''
         Reads the position of the encoder and takes action
         '''
+        if self.selector.mute_enabled:
+            self._print('waiting for mute delay')
+            time.sleep(self.mute_delay)
+            self.selector.toggle_mute()
+
         self.encoder_position = self.encoder.position
 
         if self.counter not in self.counter_crossover_points and time.time() - self.last_change_time > 1:
