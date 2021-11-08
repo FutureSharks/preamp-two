@@ -27,7 +27,7 @@ The preamplifier is made up of a number of connected components:
 * Micro controller board ([PCB](PCBs/mcu-board), [code](code/main.py)): Holds the [Itsy Bitsy M4 Express](https://learn.adafruit.com/introducing-adafruit-itsybitsy-m4?view=all) and other connectors
 * RCA panel ([PCB](PCBs/rca-panel)): For the RCA sockets and connectors
 
-The PCBs and schematics were created in [KiCad](http://kicad-pcb.org/) and the code that runs on the micro controller is [CircuitPython](https://circuitpython.org/).
+The PCBs and schematics were created in [KiCad](http://kicad.org/) and the code that runs on the micro controller is [CircuitPython](https://circuitpython.org/).
 
 ## Enclosure
 
@@ -47,4 +47,4 @@ See here for a number of different [prototypes](prototypes). All PCBs were made 
 
 ---
 
-<a href="https://circuitpython.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="60"></a>      <a href="https://www.oshwa.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-oshw-outline.svg?sanitize=true" width="60"></a>      <a href="http://kicad-pcb.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-kicad.png" width="60"></a>
+<a href="https://circuitpython.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-adafruit_blinka_angles-left.svg?sanitize=true" width="60"></a>      <a href="https://www.oshwa.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-oshw-outline.svg?sanitize=true" width="60"></a>      <a href="http://kicad.org/"><img src="https://raw.githubusercontent.com/FutureSharks/preamp-two/master/images/logo-kicad.png" width="60"></a>
